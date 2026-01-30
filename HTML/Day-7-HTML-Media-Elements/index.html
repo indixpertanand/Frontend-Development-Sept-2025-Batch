@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media Elements</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Media Elements</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Audio Element</h2>
+            <audio src="./audios/file_example_MP3_700KB.mp3" controls loop muted></audio>
+        </section>
+        <section>
+            <h2>Video Element</h2>
+            <video width="500" poster="./images/mlp-futuristic-robot-artificial-intelligence-concept.jpg" controls loop>
+                <source src="./videos/file_example_MP4_640_3MG.mp4" type="video/mp4">
+                <source src="./videos/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+            </video>
+
+            <h3>Video with Subtitle</h3>
+            <video width="500" poster="./images/mlp-futuristic-robot-artificial-intelligence-concept.jpg" controls loop>
+                <source src="./videos/Elephants_Dream.mp4" type="video/mp4">
+                <track src="./subtitles/video2.vtt" kind="subtitles" srclang="en" label="English" default></track>
+                <track src="./subtitles/video2.vtt" kind="subtitles" srclang="en" label="English-1" ></track>
+            </video>
+        </section>
+
+        <section>
+            <h2>SVG</h2>
+            <img src="./images/pink-round-geometric-shape-vector.jpg" width="200" alt="">
+        
+            <svg width="200" height="200" >
+                <!-- <circle cx="100" cy="100" r="75" fill="red" stroke="red" stroke-width="5"></circle> -->
+                <line x1="0" y1="0" x2="200" y2="200" stroke="black" stroke-width="2" ></line>
+            </svg>
+        </section>
+        <section>
+            <h2>Iframe</h2>
+            <h3>Embeding another page/website</h3>
+            <iframe src="https://indixpert.com" width="500" height="800" frameborder="0"></iframe>
+            <iframe src="./about.html" width="500" height="800" frameborder="0"></iframe>
+            
+            <h3>Embeding Youtube Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3E_jDJST69s?si=kEDflMy1NBMxarbp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h3>Embedding a map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.749900551043!2d77.06133107382867!3d28.456954692035247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19b80c9ebb39%3A0xecc98880a778b34a!2sIndixpert!5e0!3m2!1sen!2sin!4v1769688605419!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+</body>
+</html>
