@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Form</h1>
+    </header>
+    <main>
+        <form action="#">
+            <div>
+                <label for="name">Name</label>
+                <input minlength="3" required type="text" id="name" name="name" value="Anand Singh" autofocus>
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <input required type="email" id="mail" name="email" placeholder="bob@gmail.com">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input required type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])(?=.*[^\s]).{8,}$">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" readonly>
+            </div>
+            <div>
+                <label for="dob">DOB</label>
+                <input required type="date" id="dob" name="dob" value="2008-02-03" min="1986-02-01" max="2008-02-01">
+            </div>
+            <div>
+                <label for="gender">Gender</label><br/>
+                <input required type="radio" id="male" name="gender" value="M"><label for="male">Male</label>
+                <input required type="radio" id="female" name="gender" value="F"><label for="female">Female</label>
+                <input required type="radio" id="other" name="gender" value="O"><label for="other">Other</label>
+            </div>
+            <div>
+                <label for="skills">Skills</label><br/>
+                <input type="checkbox" id="C" name="skills" value="C Language"><label for="C">C Language</label>
+                <input type="checkbox" id="python" name="skills" value="Python"><label for="python">python</label>
+                <input type="checkbox" id="HTML" name="skills" value="HTML"><label for="HTML">HTML</label>
+                <input type="checkbox" id="CSS" name="skills" value="CSS"><label for="CSS">CSS</label>
+            </div>
+            <div>
+                <label for="qualification">Highest Qualification</label>
+                <select name="qualification" id="qualification" disabled>
+                    <option value="">Select One</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Graphic Design" selected>Graphic Design</option>
+                    <option value="UI/UX">UI/UX</option>
+                    <option value="App Development">App Development</option>
+                </select>
+            </div>
+            <div>
+                <label for="resume">Attach CV</label>
+                <input type="file" name="cv" id="resume">
+            </div>
+            <div>
+                <label for="introduction">Introduce Yourself</label>
+                <textarea name="introduction" id="introduction" rows="4" cols="100">
+Type your Message here....
+                </textarea>
+            </div>
+            <button>Submit</button>
+            <input type="submit" value="submit">
+            <input type="reset" value="Clear Form">
+            <button type="button">Normal Button</button>
+        </form>
+    </main>
+</body>
+</html>
