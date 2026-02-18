@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section p{
+            color: red;
+        }
+        p{
+            color: green;
+        }
+        #first p{
+            color: blue;
+        }
+        .cls1 #para{
+            color: brown;
+        }
+        p[style]{
+            color: darkgoldenrod !important;
+        }
+
+        .btn { color: black; }
+        .btn:hover { color: blue; }
+        .primary:hover { color: red; }
+        a.btn.primary:hover { color: green; }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Specificity</h1>
+    </header>
+    <main>
+        <section class="cls2">
+            <div id="first">
+                <div class="cls1">
+                    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, obcaecati?</p>
+                    <p style="color: blueviolet;">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </section>
+
+        <a href="#" class="btn primary">Click</a>
+    </main>
+</body>
+</html>

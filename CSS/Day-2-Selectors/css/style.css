@@ -1,0 +1,84 @@
+*{
+    color: red;
+    margin-top: 0;
+}
+
+body{
+    padding-bottom: 4rem;
+}
+
+h1{
+    color: blue
+}
+
+h2{
+    color: green;
+    font-size: 28px;
+}
+
+#secondaryHeading{
+    color: blueviolet;
+}
+
+.text-yellogreen{
+    color: yellowgreen;
+}
+
+.section-3 h2, .section-5 h2{
+    font-size: 32px;
+}
+
+[role="button"]{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+[required]{
+    border-color: blue;
+}
+
+[type="email"]{
+    width: 100%;
+}
+
+[class^="text"]{
+    background-color: lightcyan;
+}
+
+[href$="pdf"]{
+    color: brown;
+}
+
+[href*=":"]{
+    background: black;
+    color: white;
+}
+
+[class~="sect"]{
+    background: lightpink;
+}
+
+.descendent h2{
+    color: cyan;
+}
+.descendent>p{
+    color: blue;
+}
+
+
+
+
+
+/* Example of Next/Adjacent Sibling Selector */
+div[role="button"] + p{
+    background-color: orangered;
+    color: white;
+}
+
+/* Example of General 
+Sibling Selector */
+div[role="button"] ~ p{
+    background-color: gray;
+    color: white;
+}
