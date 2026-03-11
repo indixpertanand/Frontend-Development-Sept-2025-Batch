@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List</title>
+    <style>
+        .list-unstyled{
+            list-style: none;
+            padding-left: 0;
+        }
+        .list-2{
+            list-style-type: decimal-leading-zero;
+        }
+        .list-3{
+            list-style-position: inside;
+            list-style-image: url('./360_F_1433670714_Gcb07uLOYv3Qe5SxThA8bCAt0jALrjEU-1.jpg');
+            padding-left: 0
+        }
+        .list-4{
+            list-style: none;
+        }
+        .list-4 li{position: relative;}
+        .list-4 li::before{
+            content:'';
+            position: absolute;
+            left: -30px;
+            top: 5px;
+            /* width: 8px;
+            height: 8px; */
+            /* background: url('./360_F_1433670714_Gcb07uLOYv3Qe5SxThA8bCAt0jALrjEU.jpg') center / contain no-repeat; */
+            border: 8px solid transparent;
+            border-left-color: brown
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS LIST</h1>
+    </header>
+    <main>
+        <ul class="list-1 list-unstyled">
+            <li>Item 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium similique consequatur aliquid neque voluptates non modi quos alias vitae, dolores odio consectetur repellat tempora quam, sit, ipsa impedit officia excepturi?</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <ul class="list-2 ">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <ul class="list-3 ">
+            <li>Item 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum voluptatibus voluptate, tempora laudantium aut omnis consectetur reprehenderit et suscipit iste, autem facere. Nobis mollitia distinctio nam dolorum ullam necessitatibus?</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <ul class="list-4 ">
+            <li>Item 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum voluptatibus voluptate, tempora laudantium aut omnis consectetur reprehenderit et suscipit iste, autem facere. Nobis mollitia distinctio nam dolorum ullam necessitatibus?</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        
+    </main>
+</body>
+</html>

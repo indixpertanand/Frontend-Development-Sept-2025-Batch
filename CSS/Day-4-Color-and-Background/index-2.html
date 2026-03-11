@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color & Background</title>
+    <style>        
+        main{
+           background: url('./image/future-technology.jpg') center/200px no-repeat,
+           url('./image/gratisography-augmented-reality-800x525.jpg') center/cover no-repeat;
+           color: #fff;
+         }
+         .gradient{
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+         }
+        .gradient-1{
+            background: linear-gradient(red, blue, green)
+        }
+        .gradient-2{
+            background: linear-gradient(to bottom, red, transparent)
+        }
+        .gradient-3{
+            background: linear-gradient(to right, red, transparent)
+        }
+        .gradient-4{
+            background: linear-gradient(to left, red, transparent)
+        }
+        .gradient-5{
+            background: linear-gradient(45deg, red, green, blue)
+        }
+        .gradient-6{
+            background: linear-gradient(135deg, red 50%, green 50% 80%, blue 80%)
+        }
+        .gradient-7{
+            background-image: radial-gradient(circle at left center, red , green , blue );
+        }
+        h1{
+            width: max-content;
+            /* background: linear-gradient(to right, red, green, blue); */
+            background-image: url('./image/gratisography-augmented-reality-800x525.jpg');
+            background-size: contain;
+            /* background-attachment: fixed; */
+            color: transparent;
+            background-clip: text;
+            font-size: 120px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Color & Background</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Color</h2>
+            <div class="named-color">
+                <h3>Named Color</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+            </div>
+            <div class="hex-color">
+                <h3>Hex Color</h3>
+                <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="forth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+            </div>
+            <div class="rgb-color">
+                <h3>Hex Color</h3>
+                <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="forth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+            </div>
+            <div class="hsl-color">
+                <h3>Hex Color</h3>
+                <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="forth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+            </div>
+            <div class="color-transparency">
+                <h3>Hex Color</h3>
+                <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                
+            </div>
+            
+        </section>
+        <section class="gradients">
+            <div class="gradient gradient-1">
+
+            </div>
+            <div class="gradient gradient-2">
+
+            </div>
+            <div class="gradient gradient-3">
+
+            </div>
+            <div class="gradient gradient-4">
+
+            </div>
+            <div class="gradient gradient-5">
+
+            </div>
+            <div class="gradient gradient-6">
+
+            </div>
+            <div class="gradient gradient-7">
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

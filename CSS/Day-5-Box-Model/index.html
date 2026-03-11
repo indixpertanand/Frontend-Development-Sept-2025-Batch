@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background: lightgoldenrodyellow;
+            border: 3px solid green
+        }
+        .box-1{            
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .box-2{
+            padding-block: 20px 10px;
+            padding-inline: 15px 10px;
+            margin-top: 30px;
+            margin-left: 10px;
+            border-color: red;
+            border-style: dotted;
+        }
+        .box-3{
+            margin-top: 30px;
+            padding: 10px;
+            border-style: dashed;
+            border-left: 5px solid purple;
+            border-right-style:ridge;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Box Model</h1></header>
+    <main>
+        <h2>padding</h2>
+        <div class="box box-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div class="box box-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div class="box box-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+    </main>
+</body>
+</html>

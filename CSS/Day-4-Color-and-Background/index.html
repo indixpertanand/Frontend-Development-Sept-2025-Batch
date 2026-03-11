@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color & Background</title>
+    <style>
+        .named-color h3{
+            color: #800080;
+        }
+        .named-color p{
+            color: green;
+        }
+        .hex-color h3{
+            color: #f00;
+        }
+        .hex-color .first{
+            color: #00f;
+        }
+        .hex-color .second{
+            color: #f0f;
+        }
+        .hex-color .third{
+            color: #4691F2;
+        }
+        .rgb-color h3{
+            color: rgb(255, 55, 0);
+        }
+
+        .hsl-color h3{
+            color: hsl(0, 100%, 50%);
+        }
+
+        .color-transparency h3{
+            color: #00ff;
+        }
+        .color-transparency .first{
+            color: rgba(0, 0, 255, .3);
+        }
+        .color-transparency .second{
+            color: hsla(0, 100%, 50%, .3);
+            background-color: blue;
+
+        }
+        main{
+            /* background-image: url('./image/future-technology.jpg'); */
+            background-image: url('./image/gratisography-augmented-reality-800x525.jpg');
+            background-color: rgb(197, 197, 250);    
+
+            /* background-repeat: repeat-x;   */
+            /* background-repeat: repeat-y;   */
+            background-repeat: no-repeat;  
+            /* background-repeat: repeat;   (Default) */
+
+            /* background-position: left top; (Default) */
+            /* background-position: center center; */
+            background-position: 50% 50%;
+
+            background-attachment: fixed;
+            background-size:cover;
+            /* background-size: 100% 100%; */
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Color & Background</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Color</h2>
+            <div class="named-color">
+                <h3>Named Color</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+            </div>
+            <div class="hex-color">
+                <h3>Hex Color</h3>
+                <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="forth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+            </div>
+            <div class="rgb-color">
+                <h3>Hex Color</h3>
+                <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="forth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+            </div>
+            <div class="hsl-color">
+                <h3>Hex Color</h3>
+                <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="forth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+            </div>
+            <div class="color-transparency">
+                <h3>Hex Color</h3>
+                <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique.</p>
+                
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>

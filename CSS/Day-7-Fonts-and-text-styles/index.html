@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts & Text Styles</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+    
+    
+    <style>   
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');    
+        /* @font-face {
+            font-family: "Montserrat";
+            src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+        }
+        @font-face {
+            font-family: "Montserrat-Italic";
+            src: url('./fonts/Montserrat-Italic-VariableFont_wght.ttf');
+        }
+        @font-face {
+            font-family: "Roboto";
+            src: url('./fonts/Roboto-VariableFont_wght.ttf');
+        }
+        @font-face {
+            font-family: "Roboto-Italic";
+            src: url('./fonts/Roboto-Italic-VariableFont_wght.ttf');
+        } */
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2, h3{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            /* text-transform: capitalize; */
+            /* text-transform: lowercase; */
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            word-spacing: 1px;
+        }
+        h3{
+            /* font-size: 22px;
+            font-weight: 400;
+            font-style: normal;
+            font-variant: small-caps; */
+            font: small-caps italic 600 20px 'Roboto', sans-serif;
+            letter-spacing: normal;
+        }
+        h1{
+            text-shadow: 0px 3px 4px gray
+        }
+
+        p{
+            text-align: start;
+            line-height: 1.5;
+        }
+        .underline{
+            text-decoration: line-through;
+            text-decoration-color: red;
+            text-decoration-thickness: 1px;
+            /* text-decoration-style: dashed; */
+            text-decoration-style: double;
+        }
+
+        h3:hover{
+            color: red;
+        }
+        a:hover{
+            color: chartreuse;
+        }
+        a:focus{
+            color: crimson;
+        }
+
+        a{
+            color: black
+        }
+        a:visited{
+            color: orange;
+        }
+        form{
+            padding: 2rem
+        }
+        form:last-child{
+            background: gray;
+        }
+        h2:first-child{
+            color: blue;
+        }
+        ul li:nth-child(odd){
+            color: aquamarine;
+        }
+        ul li:nth-child(even){
+            color:darkgreen;
+        }
+        ul li:nth-child(3n){
+            color:blue;
+        }
+        ul li:nth-last-child(4n){
+            color: blueviolet;
+        }
+       main > div:nth-last-child(2){
+            background: red;
+        }
+        main > div:first-of-type{
+            color: white;
+        }
+
+        input:required{
+            border-color: orange;
+        }
+        input:invalid{
+            color: red;
+        }
+        input:valid{
+            border-color: green;
+        }
+    </style>
+</head>
+<body >
+    <header><h1>Fonts & text styles</h1></header>
+    <main>
+        <h2>FONTS</h2>
+        <h3>font family</h3>
+        <p>Lorem ipsum dolor sit <span class="underline">amet consectetur</span>, adipisicing elit. Debitis, optio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur a culpa, exercitationem provident non id autem quisquam alias recusandae accusamus!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sequi tempore deserunt? Possimus illo nemo atque cumque alias laudantium non id excepturi omnis magnam dolorumquae,abquasaccusantium. Deleniti?</p>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nihil.</div>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, pariatur.</li>
+            <li>Voluptatum inventore totam molestias repellat provident! Deleniti provident magni dolorem?</li>
+            <li>Inventore possimus, ad eum consequuntur praesentium mollitia quos voluptatibus rerum.</li>
+            <li>Possimus doloremque aliquam fugit porro. Eaque officiis id pariatur alias?</li>
+            <li>Iusto, impedit esse provident consequuntur omnis deleniti eos aperiam tempora.</li>
+        </ul>
+        <a href="//google.com">Google</a>
+        <a href="//indixpert.com" target="_blank">Indixpert</a>
+        <div class="text-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, tenetur?
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sit.
+            </div>
+        </div>
+
+        <form action="#">            
+            <input type="text" placeholder="Name" required minlength="3">
+            <input type="email" placeholder="email" >
+            <input type="number" min="18" placeholder="Age" required>
+        </form>
+    </main>
+</body>
+</html>

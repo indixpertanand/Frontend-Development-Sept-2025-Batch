@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizes, Units & Images</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 20px;
+        }
+        /* section{
+            height: 500px
+        } */
+        .container{
+            background-color: aliceblue;
+            height: 50px;
+            width: 50%;
+        }
+        .box-1{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 50vh;
+        }
+        .box-2{
+            background-color: rgb(244, 244, 244);
+            padding: 30px;
+            width: min-content;
+            font-size: 2rem;
+        }
+        .box-3{
+            background-color: rgb(243, 202, 199);
+            padding: 30px;
+            width: max-content;
+            font-size: 2em;
+        }
+        .box-4{
+            background-color: rgb(237, 221, 245);
+            padding: 30px;
+            width: fit-content;
+        }
+
+        section{
+            font-size: 16px;
+        }
+        
+        .image-box{
+            width: 50%;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .rounded{
+            border-radius: 10px;
+        }
+        .rounded-circle{
+            border-radius: 50%;
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+        .object-fit{
+            width: 100%;
+            aspect-ratio: 1/1;
+            background: #000;
+            object-fit: contain;
+        }
+        .object-fit-2{
+            width: 100%;
+            aspect-ratio: 4/2;
+            background: #000;
+            object-fit: cover;
+        }
+        .image-thumbnail{
+            border-radius: .5rem;
+            background: white;
+            border: 1px solid #e0e0e0;
+            padding: .5rem
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                
+            </div>
+            <div class="box box-1"></div>
+            <div class="box-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad repudiandae dolorum doloribus impedit provident maiores quas asperiores nesciunt perferendis?
+            </div>
+            <!-- <div class="box-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad repudiandae dolorum doloribus impedit provident maiores quas asperiores nesciunt perferendis?
+            </div> -->
+            <div class="box-4">
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sit!
+            </div>
+            
+        </section>
+        <section>
+            <h2>Images</h2>
+            <h3>Responsive Image</h3>
+            <div class="image-box">
+                <img src="./images/future-technology.jpg" alt="future-technology">
+            </div>
+            <h3>Rounded Image</h3>
+            <div class="image-box ">
+                <img src="./images/future-technology.jpg" class="rounded" alt="future-technology">
+            </div>
+            <h3>Circled Image</h3>
+            <div class="image-box ">
+                <img src="./images/mlp-futuristic-robot-artificial-intelligence-concept.jpg" class="rounded-circle" alt="future-technology">
+            </div>
+            <div class="image-box ">
+                <img src="./images/mlp-futuristic-robot-artificial-intelligence-concept.jpg" class="object-fit" alt="future-technology">
+            </div>
+            <div class="image-box ">
+                <img src="./images/future-technology.jpg" class="object-fit-2" alt="future-technology">
+            </div>
+            <div class="image-box ">
+                <img src="./images/future-technology.jpg" class="image-thumbnail" alt="future-technology">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
