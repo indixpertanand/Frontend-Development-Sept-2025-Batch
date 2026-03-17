@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0
+        }
+        /* section p{
+            color: red;
+        }
+        section p.intro{
+            color: inherit;
+        } */
+
+        section p:not(.intro){
+            color: red;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .card-wrapper{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem
+        }
+        .card{
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .card-body{
+            padding: 1rem
+        }
+
+        /* section .card h2{
+            font-size: 50px;
+        }
+        .card img + .card-body h2{
+            font-size: 1.5rem;
+        } */
+
+        /* .card:not(:has(.card-image)) h2, .another-section h2{
+            font-size: 50px;
+        } */
+
+        /* :is(.card:not(:has(.card-image)), .another-section) h2{
+           font-size: 50px; 
+        } */
+        :where(.card:not(:has(.card-image)), .another-section) h2{
+           font-size: 50px; 
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .masking h2{
+            margin-block: 2rem 1rem;
+        }
+        /* .masking .container div{background: red;} */
+          .masking .container div:first-child{
+            mask-image: url('./images/mask1.png');
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+          }
+          .masking .container div:nth-child(2){
+            mask-image: url('./images/pngtree-abstract-element-blue-pastel-blob-png-image_6568040.png');
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+          }
+          .masking .container div:nth-child(3){
+            mask-image: url('./images/pngtree-blob-line-aesthetic-png-image_6560473.png');
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+          }
+          .masking .container div:nth-child(4) img{
+            mask-image: linear-gradient(to right, red 50%, transparent);
+          }
+          .masking .container div:nth-child(5) img{
+            mask-image: radial-gradient(circle at center, red 40%, transparent);
+          }
+          .masking .container div:nth-child(6) img{
+            mask-image: radial-gradient(circle at center, red 40%, transparent 40%),
+                linear-gradient(transparent 30%, red 30% 70%, transparent 70%),
+                linear-gradient(135deg, transparent 45%, red 45% 55%, transparent 55%),
+                linear-gradient(-135deg, transparent 45%, red 45% 55%, transparent 55%);
+                mask-composite: exclude;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Advanced Selectors</h1>
+    </header>
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed facilis voluptatibus sunt molestias tempore id maiores mollitia consequatur quis non!</p>
+            <p>Ullam asperiores dolor maxime vero blanditiis adipisci, necessitatibus non. A minus aliquam consequatur repellat vel molestiae facere ratione tempora fuga?</p>
+            <p class="intro">Dolorem odio tempora corrupti id sed, enim atque in voluptatibus at numquam sequi, dolore doloremque. Quae magnam dolorem deserunt ratione.</p>
+            <p>Ea consequatur, error iure repellendus optio similique sed laboriosam expedita labore eos reiciendis saepe voluptatibus assumenda blanditiis corporis provident ut.</p>
+            <p>Exercitationem, illum adipisci molestiae numquam, earum repellat, placeat deleniti reprehenderit modi magni autem praesentium corporis. Enim, tempore quis? Accusamus, vero.</p>
+        </section>
+
+        <section class="card-wrapper">
+            <div class="card">
+                <img class="card-image" src="./images/future-technology.jpg" />
+                <div class="card-body">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <button>Click Here</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <button>Click Here</button>
+                </div>
+            </div>
+        </section>
+        <section class="another-section">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+        </section>
+
+        <section class="masking">
+            <h2>CSS Masking</h2>
+
+            <div class="container">
+                <div>
+                    <img src="./images/bird-seating-on-a-branch-covered-with-flower.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower.avif" alt="">
+                </div>
+                <div>
+                    <img src="./images/bird-seating-on-a-branch-covered-with-flower.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower.avif" alt="">
+                </div>
+                <div>
+                    <img src="./images/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower.avif" alt="">
+                </div>
+                <div>
+                    <img src="./images/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower.avif" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

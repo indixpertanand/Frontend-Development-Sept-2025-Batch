@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Transition and Animation</title>
+    <style>
+        .box{
+            background: rgb(158, 8, 8);
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            color: white;
+            display: grid;
+            place-items: center;
+        }
+
+        .box-1{
+            /* transform: translate(30px, 30px); */
+            transform: translateX(30px) translateY(30px);
+        }
+        .box-2{
+            transform: rotate(-45deg);
+            /* transform: rotateY(90deg) */
+        }
+        .box-3{
+            transform: scale(.5)
+        }
+        .box-4{
+            transform: skewX(-30deg)
+        }
+        .box-5{
+            /* transform:  translate(40px) rotate(45deg) scale(.5); */
+            translate: 40px;
+            rotate: 45deg;
+            scale: .5;
+            /* transition-property: all;
+            transition-duration: .4s;
+            transition-delay: 0;
+            transition-timing-function: linear; */
+            transition: .4s 1s all linear
+        }
+        .box-5:hover{
+            /* transform: scale(1); */
+            scale: 1;
+            width: 150px;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        .container:hover .box{
+            /* animation-name: movebox;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+            animation: movebox 1.5s linear infinite both;
+
+        }
+
+        @keyframes movebox{
+            0%{
+                translate: 0px 0px;
+            }
+            25%{
+                translate: 200px 0px;
+            }
+            50%{
+                 translate: 200px 200px;
+            }
+            75%{
+                 translate: 0px 200px;
+            }
+            100%{
+                translate: 0px 0px
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transform Transition and Animation</h1>
+    </header>
+    <main>
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2</div>
+        <div class="box box-3">Box 3</div>
+        <div class="box box-4">Box 4</div>
+        <div class="box box-5">Box 5</div>
+
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </main>
+</body>
+</html>
