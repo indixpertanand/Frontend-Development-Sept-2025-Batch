@@ -29,8 +29,8 @@
                 <a href="index.html" class="navbar-brand">
                     <img src="./assets/images/lumintu-logo.svg" alt="lumintu logo">
                 </a>
-                <div class="header-nav_right d-flex align-center">
-                    <ul class="list-unstyled d-flex align-center">
+                <div class="header-nav_right flex-column d-flex align-center">
+                    <ul class="list-unstyled d-flex flex-column align-center">
                         <li class="menu-item"><a class="menu-link active" href="index.html">Home</a></li>
                         <li class="menu-item"><a class="menu-link" href="#">About</a></li>
                         <li class="menu-item"><a class="menu-link" href="#">Services</a></li>
@@ -39,13 +39,21 @@
                     </ul>
                     <a href="#" class="btn btn-dark">Get Started</a>
                 </div>
+                <label for="toggler">                    
+                    <button type="button" class="navbar-toggler d-flex flex-column">
+                        <input type="checkbox" id="toggler" class="d-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </label>
             </nav>
         </div>
     </header>
     <main>
         <section class="top-banner">
-            <div class="container">
-                <div class="banner-left">
+            <div class="container d-flex flex-column-reverse">
+                <div class="banner-left d-flex flex-column">
                     <div class="banner-left_top">
                         <span class="subtitle">
                             <img src="./assets/icons/lock-accent.svg" alt="">
@@ -56,28 +64,28 @@
                             Consequat lacus eget congue hac aliquam facilisis purus massa vestibulum. Quam egestas et urna magna a phasellus et.
                         </p>
                         <div class="banner-links">
-                            <a href="#">Get a Quote</a>
+                            <a href="#" class="btn btn-dark">Get a Quote</a>
                             <a href="tel: 1234567890">+123 456 7890</a>
                         </div>   
                     </div>
-                    <p>See how we can help you. <button type="button">Play Video</button></p>
+                    <p class="mt-auto">See how we can help you. <button class="text-link text-accent" type="button">Play Video</button></p>
                 </div>
-                <div class="banner-right">
+                <div class="banner-right d-flex">
                     <div class="left-panel">
-                        <img src="./assets/images/banner-person-image.webp"  alt="An african prefessional smiling and pointing toward Banner Title">
-                        <div class="growth-rate-card">
-                            <div class="rate"><span>15</span>%</div>
-                            <div class="label">Growth Rate</div>
+                        <img src="./assets/images/banner-person-image.webp" class="img-responsive" alt="An african prefessional smiling and pointing toward Banner Title">
+                        <div class="growth-rate-card bg-primary text-center">
+                            <div class="rate h2 text-white"><span class="text-accent">15</span>%</div>
+                            <div class="label text-white">Growth Rate</div>
                         </div>
                     </div>
                     <div class="right-panel">
-                        <img src="./assets/images/top-banner-image.webp" alt="A concept image for saving money">
+                        <img src="./assets/images/top-banner-image.webp" class="img-responsive" alt="A concept image for saving money">
                     </div>
-                    <div class="rating-flag">
+                    <div class="rating-flag d-flex align-center bg-white">
                         <img src="./assets/images/rating-image.webp" alt="">
                         <div class="rating-wrappper">
                             <strong>“Elevated to industry leaders.”</strong>
-                            <div class="ratings" aria-label="5 Star rating">
+                            <div class="ratings d-flex align-center" aria-label="5 Star rating">
                                 <img src="./assets/icons/star.svg" alt="star">
                                 <img src="./assets/icons/star.svg" alt="star">
                                 <img src="./assets/icons/star.svg" alt="star">
@@ -89,29 +97,32 @@
                 </div>
             </div>
         </section>
-        <section class="statistics">
-            <div class="container">
-                <div class="stats">
-                    <div class="count"><span>34</span>k +</div>
+        <section class="statistics bg-primary text-white">
+            <div class="container d-flex justify-between align-center flex-column">
+                <div class="stats text-center">
+                    <div class="count h1  text-white"><span>34</span>k +</div>
                     <p>Success Stories</p>
                 </div>
-                <div class="stats">
-                    <div class="count"><span>210</span> +</div>
+                <span class="saperator"></span>
+                <div class="stats text-center">
+                    <div class="count h1 text-white"><span>210</span> +</div>
                     <p>Professional Team</p>
                 </div>
-                <div class="stats">
-                    <div class="count"><span>54</span>k +</div>
+                <span class="saperator"></span>
+                <div class="stats text-center">
+                    <div class="count h1  text-white"><span>54</span>k +</div>
                     <p>Branches Nationwide</p>
                 </div>
-                <div class="stats">
-                    <div class="count"><span>35</span>k +</div>
+                <span class="saperator"></span>
+                <div class="stats text-center">
+                    <div class="count h1  text-white"><span>35</span>k +</div>
                     <p>Worldwide Clients</p>
                 </div>
             </div>
         </section>
         <section class="home-about">
             <div class="container">
-                <div class="home-about_top">
+                <div class="home-about_top  d-flex flex-column">
                     <div class="about_top_left">
                         <img src="./assets/images/about-image-1.webp" alt="her-attitude-shines-through-the-rain" />
                         <img src="./assets/images/about-image-2.webp" alt="" />
@@ -125,13 +136,13 @@
                             <h2 class="title">Innovating Insurance Solutions</h2>
                         </div>
                         <div class="vision">
-                            <h3>Our Vision</h3>
+                            <h3 class="h5">Our Vision</h3>
                             <p>Aliquet nec mauris tortor at sed erat. Ut faucibus habitant risus morbi quis egestas etiam lorem. Feugiat lorem aliquam eget mattis cursus. Turpis massa arcu sagittis interdum. Integer molestie.</p>
-                            <a href="#">Learn More</a>
+                            <a href="#" class="btn btn-dark">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <div class="home-about_bottom">
+                <div class="home-about_bottom d-flex flex-wrap justify-between">
                     <img src="./assets/images/client-logo/client-logo-1.webp" alt="">
                     <img src="./assets/images/client-logo/client-logo-2.webp" alt="">
                     <img src="./assets/images/client-logo/client-logo-3.webp" alt="">
@@ -149,82 +160,84 @@
                         </span>
                         <h2 class="title">Our Range of Services</h2>
                     </div>
-                    <a href="#">See All Services</a>
+                    <a href="#" class="text-accent">See All Services</a>
                 </div>
                 <div class="services">
-                    <div class="service-card">
+                    <div class="service-card d-flex flex-column">
                         <div class="card-icon">
                             <img src="./assets/icons/zap-white.svg" alt="">
                         </div>
                         <div class="card-content">
-                            <h3>Life Insurance</h3>
+                            <h3 class="h4">Life Insurance</h3>
                             <p>Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.</p>
                         </div>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card d-flex flex-column">
                         <div class="card-icon">
                             <img src="./assets/icons/zap-white.svg" alt="">
                         </div>
                         <div class="card-content">
-                            <h3>Health Insurance</h3>
+                            <h3 class="h4">Health Insurance</h3>
                             <p>Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.</p>
                         </div>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card d-flex flex-column">
                         <div class="card-icon">
                             <img src="./assets/icons/zap-white.svg" alt="">
                         </div>
                         <div class="card-content">
-                            <h3>Auto Insurance</h3>
+                            <h3 class="h4">Auto Insurance</h3>
                             <p>Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.</p>
                         </div>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card d-flex flex-column">
                         <div class="card-icon">
                             <img src="./assets/icons/zap-white.svg" alt="">
                         </div>
                         <div class="card-content">
-                            <h3>Home Insurance</h3>
+                            <h3 class="h4">Home Insurance</h3>
                             <p>Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="why-choose-us">
-            <div class="container">
+        <section class="why-choose-us bg-primary text-white">
+            <div class="container d-flex flex-column">
                 <div class="why-choose-us_left">
-                    <div class="section-title">
-                        <span class="subtitle">
-                            Why Choose Us
-                        </span>
-                        <h2 class="title">Why Lumintu Stands Out in the Insurance Industry</h2>
+                    <div class="heading">
+                        <div class="section-title">
+                            <span class="subtitle">
+                                Why Choose Us
+                            </span>
+                            <h2 class="title text-white">Why Lumintu Stands Out in the Insurance Industry</h2>
+                        </div>
                     </div>
-                    <div class="usps">                        
-                        <div class="usp-card">
+                    <div class="usps d-flex flex-column">                        
+                        <div class="usp-card d-flex flex-column">
                             <div class="card-icon">
                                 <img src="./assets/icons/zap-white.svg" alt="">
                             </div>
                             <div class="card-content">
-                                <h3>Experience and Expertise</h3>
+                                <h3 class="text-white h5">Experience and Expertise</h3>
                                 <p>Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.</p>
                             </div>
                         </div>
-                        <div class="usp-card">
+                        <div class="usp-card d-flex flex-column">
                             <div class="card-icon">
                                 <img src="./assets/icons/zap-white.svg" alt="">
                             </div>
                             <div class="card-content">
-                                <h3>Comprehensive Coverage</h3>
+                                <h3 class="text-white h5">Comprehensive Coverage</h3>
                                 <p>Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.</p>
                             </div>
                         </div>
-                        <div class="usp-card">
+                        <div class="usp-card d-flex flex-column">
                             <div class="card-icon">
                                 <img src="./assets/icons/zap-white.svg" alt="">
                             </div>
                             <div class="card-content">
-                                <h3>Customer-Centric Approach</h3>
+                                <h3 class="text-white h5">Customer-Centric Approach</h3>
                                 <p>Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.</p>
                             </div>
                         </div>
@@ -554,13 +567,13 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section class="footer-top container">
+    <footer class="bg-primary">
+        <section class="footer-top container d-flex flex-column">
             <div class="footer-intro">
                 <a href="index.html" class="footer-logo">
                     <img src="./assets/images/lumintu-logo-light.svg" alt="Lumintu Logo light">
-                </a><br/>
-                <strong>Empowering Your Peace of Mind</strong>
+                </a>
+                <strong class="text-white">Empowering Your Peace of Mind</strong>
                 <p>
                     Tellus tristique duis elementum nisl. Dui maecenas blandit cum a consectetur 
                     metus enim.
@@ -568,8 +581,8 @@
                 <a href="tel: 1234567890" aria-label="Click here to call us"><img src="./assets/icons/phone-white.svg" alt="" />+123 456 7891</a>
             </div>
             <div class="footer-links">
-                <strong>Company</strong>
-                <nav>
+                <strong class="text-white">Company</strong>
+                <nav class="d-flex flex-column">
                     <a href="index.html">Home</a>
                     <a href="#">About Us</a>
                     <a href="#">Services</a>
@@ -577,8 +590,8 @@
                 </nav>
             </div>
             <div class="footer-links">
-                <strong>Help</strong>
-                <nav>
+                <strong class="text-white">Help</strong>
+                <nav class="d-flex flex-column">
                     <a href="#">Customer Support</a>
                     <a href="#">How It Works</a>
                     <a href="#">Terms & Condition</a>
@@ -586,15 +599,15 @@
                 </nav>
             </div>
             <div class="footer-contact">
-                <strong>Work Hours</strong>
-                <ul>
-                    <li><img src="./assets/icons/clock-accent.svg" alt="clock icon"> 9 AM - 5 PM, Monday - Saturday</li>
-                    <li><img src="./assets/icons/send-accent.svg" alt="Send icon"> <a href="mailto: support@kaliber.com">support@kaliber.com</a></li>
-                    <li><img src="./assets/icons/map-pin-accent.svg" alt="Map Pin icon"> Jl. Menuju Roma No.01, Lewat Jalur Udara.</li>
+                <strong class="text-white">Work Hours</strong>
+                <ul class="list-unstyled">
+                    <li class="d-flex"><img src="./assets/icons/clock-accent.svg" alt="clock icon"> 9 AM - 5 PM, Monday - Saturday</li>
+                    <li class="d-flex"><img src="./assets/icons/send-accent.svg" alt="Send icon"> <a href="mailto: support@kaliber.com">support@kaliber.com</a></li>
+                    <li class="d-flex"><img src="./assets/icons/map-pin-accent.svg" alt="Map Pin icon"> Jl. Menuju Roma No.01, Lewat Jalur Udara.</li>
                 </ul>
             </div>
         </section>
-        <section class="footer-bottom container">
+        <section class="footer-bottom container d-flex flex-column justify-between">
             <p>Copyright © 2023 Kaliber</p>
             <p>Designed by <a href="//indixpert.com" target="_blank" rel="nofollow" referrerpolicy="noopener noreferrer">Indixpert Technologies</a></p>
         </section>
