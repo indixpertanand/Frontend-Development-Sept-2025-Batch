@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Via Download</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .h-100px{
+            height: 100px;
+        }
+        .h2, h2{
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bootstrap Via Download</h1>
+    </header>
+    <main>
+        <div class="container bg-body-secondary">
+            <h2>Equal Column auto</h2>
+            <div class="row">
+                <div class="col h-100px">item1</div>
+                <div class="col h-100px">item2</div>
+                <div class="col h-100px">item3</div>
+                <div class="col h-100px">item4</div>
+                <div class="col h-100px">item5</div>
+            </div>
+            <h2>Equal Column controlled</h2>
+            <div class="row row-cols-3">
+                <div class="col h-100px">item1</div>
+                <div class="col h-100px">item2</div>
+                <div class="col h-100px">item3</div>
+                <div class="col h-100px">item4</div>
+                <div class="col h-100px">item5</div>
+                <div class="col h-100px">item6</div>
+                <div class="col h-100px">item7</div>
+                <div class="col h-100px">item8</div>
+            </div>
+
+            <h3>Unequal Column</h3>
+            <div class="row">
+                <div class="col-6 h-100px">item1</div>
+                <div class="col-3 h-100px">item2</div>
+                <div class="col-3 h-100px">item3</div>
+                <div class="col-6 h-100px">item4</div>
+                <div class="col-6 h-100px">item5</div>
+            </div>
+            <h2>Equal Column controlled Responsive</h2>
+            <div class="row row-cols-2 row-cols-md-3">
+                <div class="col h-100px">item1</div>
+                <div class="col h-100px">item2</div>
+                <div class="col h-100px">item3</div>
+                <div class="col h-100px">item4</div>
+                <div class="col h-100px">item5</div>
+                <div class="col h-100px">item6</div>
+                <div class="col h-100px">item7</div>
+                <div class="col h-100px">item8</div>
+            </div>
+
+            <h3>Unequal Column responsive</h3>
+            <div class="row">
+                <div class="col-md-6 h-100px">item1</div>
+                <div class="col-6 col-md-3 h-100px">item2</div>
+                <div class="col-6 col-md-3 h-100px">item3</div>
+                <div class="col-md-6 h-100px">item4</div>
+                <div class="col-lg-6 h-100px">item5</div>
+            </div>
+
+            <!-- Alignment -->
+            
+        </div>
+        <div class="container pb-5">
+             <h2>Alignment</h2>
+             <h3>Verticle ALignment</h3>
+             <div class="row align-items-center align-items-lg-start">
+                <div class="col bg-secondary-subtle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, eveniet.
+                </div>
+                <div class="col bg-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, qui tenetur commodi molestiae facilis aliquam quidem eius ex voluptate magni!
+                </div>
+                <div class="col bg-warning">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi est similique rerum sint quo minus dolorum nesciunt dolorem ratione deleniti, itaque, at dolor. Iure, totam officia explicabo deleniti temporibus nesciunt.
+                </div>
+             </div>
+             <h3 class="mt-4">Horizontal Alignment</h3>
+             <div class="row row-cols-3 row-cols-md-3 row-cols-lg-4 justify-content-center justify-content-md-evenly justify-content-xl-around">
+                <div class="col bg-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, amet.</div>
+                <div class="col bg-primary-subtle">Similique consectetur distinctio odio laboriosam commodi cum velit veniam. Atque.</div>
+             </div>
+             
+             <h2 class="mt-5">Column Wrapping</h2>
+             <h3>Auto wrapping</h3>
+             <div class="row ">
+                <div class="col-lg-6 bg-info">col-lg-6 <br/>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, amet.</div>
+                <div class="col-lg-7 bg-primary-subtle">col-lg-7 <br/> Similique consectetur distinctio odio laboriosam commodi cum velit veniam. Atque.</div>
+                <div class="col-lg-5 bg-light">col-lg-5 <br/> Similique consectetur distinctio odio laboriosam commodi cum velit veniam. Atque.</div>
+             </div>
+             <h3 class="mt-4">Forced Wrap</h3>
+             <div class="row">
+                <div class="col-lg-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, debitis!</div>
+                <div class="col-lg-4">Unde perspiciatis natus rerum esse deleniti sunt ipsa! Fugit, minima?</div>
+                <div class="w-100"></div>
+                <div class="col-lg-4">Modi dolorem enim incidunt possimus dolores magni tempora ipsa dicta!</div>
+             </div>
+
+             <h2>Order</h2>
+             <div class="row " >
+                <div class="col-lg-6 order-lg-1">
+                    <div class="image ratio ratio-16x9">
+                        <div class="bg-primary"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content">
+                        <h4>Heading here</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad, aspernatur dignissimos, at nobis architecto debitis tempore repellat, autem quo velit officia? Aliquid repudiandae qui saepe corporis neque iusto fuga molestias dicta unde, numquam quis quam nam tempore facilis odit.</p>
+                    </div>
+                </div>
+                
+             </div>
+             
+             <div class="col-lg-8 mt-5 mx-auto text-center bg-info">
+                <h2>Standalone column</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nostrum, ipsam expedita ad dignissimos aliquam animi dolor ab repellat eaque minima ipsa corporis accusamus aspernatur rerum quae officiis. Laboriosam, iusto.</p>
+             </div>
+
+             <h2 class="mt-5">Gap</h2>
+             <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="bg-info-subtle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-warning">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-warning">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.
+                    </div>
+                </div>
+             </div>
+             <h3 class="mt-4">Row Gap & Column Gap</h3>
+             <div class="row gx-3 gy-4">
+                <div class="col-lg-4">
+                    <div class="bg-info-subtle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-warning">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-warning">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="mt-5 container">
+            <h2>Typography</h2>
+            <h3 class="mt-4">Headings</h3>
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <div class="h1">Heading Text 1</div>
+            <h3 class="fs-4">Heading Level 3</h3>
+            <p class="mt-4"><abbr title="attribute">ATTR</abbr></p>
+            <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+            <h2 class="mt-5">Table</h2>
+            <h3>Simple Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>heading 1</th>
+                        <th>heading 2</th>
+                        <th>heading 3</th>
+                        <th>heading 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-4">Bootstrap Table</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>heading 1</th>
+                        <th>heading 2</th>
+                        <th>heading 3</th>
+                        <th>heading 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-4">Bootstrap Table widthout border</h3>
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th>heading 1</th>
+                        <th>heading 2</th>
+                        <th>heading 3</th>
+                        <th>heading 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-4">Bootstrap Table width border</h3>
+            <table class="table table-bordered table-info">
+                <thead>
+                    <tr>
+                        <th>heading 1</th>
+                        <th>heading 2</th>
+                        <th>heading 3</th>
+                        <th>heading 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-4">Bootstrap Table Stripped</h3>
+            <table class="table table-bordered table-striped-columns table-hover table-danger">
+                <thead>
+                    <tr>
+                        <th>heading 1</th>
+                        <th>heading 2</th>
+                        <th>heading 3</th>
+                        <th>heading 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container pb-5 mt-5">
+            <h2>Utilities</h2>
+            <h3 class="mt-3">Background</h3>
+            <div class="h-100px bg-primary"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, dolorum?</p></div>
+            <div class="h-100px bg-primary bg-gradient"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, dolorum?</p></div>
+            <div class="h-100px text-bg-success"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, dolorum?</p></div>
+            <h3 class="mt-4">Border</h3>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="h-100px border border-primary-subtle"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="h-100px border-top border-danger"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="h-100px border-bottom border-3"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="h-100px border-start"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="h-100px border border-end-0"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="ratio ratio-1x1">
+                        <div class="border bg-body-secondary rounded-circle"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="ratio ratio-21x9">
+                        <div class="border bg-body-secondary rounded-pill"></div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mt-4">Color</h3>
+            <p class="text-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolore?</p>
+            <p class="text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolore?</p>
+            <div class="bg-black text-white">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, suscipit. Eligendi repellat labore possimus cum enim non, esse corrupti veritatis?</p>
+            </div>
+            <h3 class="mt-4">Display</h3>
+            <div class="d-flex justify-content-lg-end gap-3 flex-wrap">
+                <div class="flex-item text-bg-dark flex-grow-1">Lorem ipsum dolor sit amet.</div>
+                <div class="flex-item text-bg-warning flex-grow-1">Lorem ipsum dolor sit amet.</div>
+                <div class="flex-item text-bg-info flex-grow-1">Lorem ipsum dolor sit amet.</div>
+                <div class="flex-item text-bg-secondary flex-grow-1">Lorem ipsum dolor sit amet.</div>
+                <div class="flex-item text-bg-primary flex-grow-1">Lorem ipsum dolor sit amet.</div>
+            </div>
+            <h3 class="mt-3">Float</h3>
+            <div>
+                <img src="./Healthy-bite.png" alt="" class="d-block d-lg-inline-block float-lg-end">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus pariatur molestias minus assumenda quod architecto reprehenderit quisquam magnam labore dolore.
+                <div class="clearfix"></div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis commodi error neque. Inventore eaque nemo atque hic sunt illum eos consequuntur, consectetur ipsam aut sed maiores, accusantium itaque culpa ratione.</p>
+
+            <button class="pe-none">Indixpert</button>
+
+            <h3 class="mt-4">Position</h3>
+            <div class="position-relative bg-success-subtle container-box" style="height: 300px">
+                <div class="box bg-dark position-absolute top-0 start-0 rounded ratio ratio-1x1" style="width: 50px;"></div>
+                <div class="box bg-dark position-absolute top-0 start-50 translate-middle-x rounded ratio ratio-1x1" style="width: 50px;"></div>
+                <div class="box bg-dark position-absolute top-0 end-0 rounded ratio ratio-1x1" style="width: 50px;"></div>
+                <div class="box bg-dark position-absolute top-50 start-0 translate-middle-y rounded ratio ratio-1x1" style="width: 50px;"></div>
+                <div class="box bg-dark position-absolute top-50 start-50 translate-middle rounded ratio ratio-1x1" style="width: 50px;"></div>
+                <div class="box bg-dark position-absolute top-50 end-0 translate-middle-y rounded ratio ratio-1x1" style="width: 50px;"></div>
+                <div class="box bg-dark position-absolute start-0 bottom-0 rounded ratio ratio-1x1" style="width: 50px;"></div>
+                <div class="box bg-dark position-absolute start-50 bottom-0 translate-middle-x rounded ratio ratio-1x1" style="width: 50px;"></div>
+                <div class="box bg-dark position-absolute bottom-0 end-0 rounded ratio ratio-1x1" style="width: 50px;"></div>
+            </div>
+            <div class="position-relative my-5">
+                <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 2px;">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <button class="btn position-absolute start-0 top-50 translate-middle-y rounded-circle text-bg-primary lh-1" style="width: 2rem; height: 2rem">1</button>
+                <button class="btn position-absolute start-50 top-50 translate-middle rounded-circle text-bg-primary lh-1" style="width: 2rem; height: 2rem">2</button>
+                <button class="btn position-absolute end-0 top-50 translate-middle-y rounded-circle text-bg-primary lh-1" style="width: 2rem; height: 2rem">3</button>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="ratio bg-light ratio-16x9 shadow">
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ratio bg-light ratio-16x9 shadow-sm">
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ratio bg-light ratio-16x9 shadow-lg">
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ratio bg-light ratio-16x9 shadow-none">
+
+                    </div>
+                </div>
+            </div>
+            <h3>Word Wrap</h3>
+            <p class="text-break">
+                Lorem ipsum dolor sit amet consecteturadipisicingelit.Laboriosam magnam ducimus consequuntur ipsum sapiente dolore eligendi, nostrum commodi ex distinctio.
+            </p>
+            <div class="text-bg-danger mt-4">
+                <h2 class="text-reset">Secondary Heading</h2>
+                <h3>Third level heading</h3>
+            </div>
+            <h3 class="mt-4">Visibility</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, nostrum.</p>
+            <p class="invisible">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, nostrum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, nostrum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, nostrum.</p>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
