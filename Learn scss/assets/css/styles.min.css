@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text-primary {
+  color: blue;
+}
+
+.bg-secondary {
+  background: rgb(83, 83, 83);
+}
+
+header {
+  background: rgb(83, 83, 83);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav a {
+  color: #fff;
+}
+header nav a:hover {
+  color: blue;
+}
+.btn, .btn-secondary, .btn-primary {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-sm {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.btn-lg {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: rgb(83, 83, 83);
+  color: #fff;
+}/*# sourceMappingURL=styles.min.css.map */

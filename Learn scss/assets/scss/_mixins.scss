@@ -1,0 +1,4 @@
+@mixin btn-size($size, $padding-x, $padding-y){
+    font-size: $size;
+    padding: $padding-y $padding-x;
+}

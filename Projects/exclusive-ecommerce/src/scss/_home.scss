@@ -1,0 +1,67 @@
+// Top Banner
+
+.top-section .main-image{
+    @include media-breakpoint-up(lg){
+        margin-left: -1rem;
+        width: calc(100% + 5rem);
+        height: auto;
+    }
+}
+
+
+.carousel-indicators [data-bs-target]{
+    border: 2px solid transparent !important;
+    border-radius: 50%;
+}
+.carousel-indicators button.active{
+    --bs-carousel-indicator-active-bg: #{$secondary};
+    border-color: #fff !important;
+}
+
+
+.offer-ends .colon{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    &::before, &::after{
+        content: '';
+        width: .25rem;
+        height: .25rem;
+        border-radius: 50%;
+        background: $secondary;
+    }
+    translate: 0 .5rem
+}   
+
+.categories .card{
+    transition: .4s all;
+    a,  img{
+        transition: .4s all;
+    }
+    
+}
+.categories .card:hover{
+    background: $secondary;
+    a{
+        color: #fff;
+    }
+    img{
+        filter: brightness(0) invert(1);
+    }
+}
+
+.featured-banner small{
+    font-size: $font-size-xs;
+}
+.featured-banner .right-image{
+    position: relative;
+    img{
+        max-width: 90%;
+    }
+    // &::before{
+    //     content: '';
+    //     position: absolute;
+    //     inset: 0;
+        background-image: radial-gradient(circle at center, rgba(255, 255, 255, .2), rgba(255, 255, 255, 0) 70%);
+    // }
+}

@@ -7,6 +7,16 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        #navbar-example2 a {
+            color: inherit
+        }
+
+        #navbar-example2 .active {
+            color: white;
+            background: var(--bs-link-color)
+        }
+    </style>
 </head>
 
 <body>
@@ -17,16 +27,28 @@
         <div class="row">
             <div class="col-lg-4 col-xxl-3">
                 <aside class="border-right bg-primary-subtle p-4 rounded sticky-lg-top">
-                    <nav>
+                    <nav id="navbar-example2">
                         <ul class="list-unstyled">
-                            <li class="border-bottom py-2 border-primary"><a href="#accordion"
-                                    class="text-reset text-decoration-none">Accordion</a></li>
+                            <li class="border-bottom border-primary"><a href="#accordion"
+                                    class="text-decoration-none p-2 d-block">Accordion</a></li>
+                            <li class="border-bottom border-primary"><a href="#alert"
+                                    class="text-decoration-none p-2  d-block">Alert</a></li>
+                            <li class="border-bottom border-primary"><a href="#badge"
+                                    class="text-decoration-none p-2  d-block">Badge</a></li>
+                            <li class="border-bottom border-primary"><a href="#breadcrumb"
+                                    class="text-decoration-none p-2  d-block">Breadcrumb</a></li>
+                            <li class="border-bottom border-primary"><a href="#button"
+                                    class="text-decoration-none p-2  d-block">Button</a></li>
+                            <li class="border-bottom border-primary"><a href="#btn-group"
+                                    class="text-decoration-none p-2  d-block">Button Group</a></li>
+                            <li class="border-bottom border-primary"><a href="#card"
+                                    class="text-decoration-none p-2  d-block">Card</a></li>
                         </ul>
                     </nav>
                 </aside>
             </div>
             <div class="col-lg-8 col-xxl-9">
-                <main class="ps-4 pb-5">
+                <main class="ps-4 pb-5" data-bs-spy="scroll" data-bs-target="#navbar-example2">
                     <section id="accordion">
                         <h2>Accordion</h2>
                         <div class="accordion" id="accordionExample">
@@ -516,27 +538,40 @@
                     <section id="navtabs" class="mt-5">
                         <h2>Nav & Tabs</h2>
                         <ul class="nav nav-underline">
-                            <li class="nav-item"><button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#home-tab" aria-controls="home-tab" aria-selected="true">Home</button></li>
-                            <li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#about-tab" aria-controls="about-tab">About</button></li>
-                            <li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#contact-tab" aria-controls="contact-tab">Contact</button></li>
-                            <li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#service-tab" aria-controls="service-tab">Service</button></li>
+                            <li class="nav-item"><button type="button" class="nav-link active" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab" aria-controls="home-tab"
+                                    aria-selected="true">Home</button></li>
+                            <li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="tab"
+                                    data-bs-target="#about-tab" aria-controls="about-tab">About</button></li>
+                            <li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab" aria-controls="contact-tab">Contact</button></li>
+                            <li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="tab"
+                                    data-bs-target="#service-tab" aria-controls="service-tab">Service</button></li>
                         </ul>
                         <div class="tab-content" id="tabContent">
                             <div class="tab-pane fade show active" id="home-tab">
                                 <h5>Home Tab</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id natus quo accusantium? Itaque nisi doloremque possimus fugiat quas eos aspernatur inventore beatae expedita voluptate. Tempora praesentium sint excepturi suscipit?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id natus quo
+                                    accusantium? Itaque nisi doloremque possimus fugiat quas eos aspernatur inventore
+                                    beatae expedita voluptate. Tempora praesentium sint excepturi suscipit?</p>
                             </div>
                             <div class="tab-pane fade" id="about-tab">
-                                 <h5>About Tab</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id natus quo accusantium? Itaque nisi doloremque possimus fugiat quas eos aspernatur inventore beatae expedita voluptate. Tempora praesentium sint excepturi suscipit?</p>
+                                <h5>About Tab</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id natus quo
+                                    accusantium? Itaque nisi doloremque possimus fugiat quas eos aspernatur inventore
+                                    beatae expedita voluptate. Tempora praesentium sint excepturi suscipit?</p>
                             </div>
                             <div class="tab-pane fade" id="contact-tab">
-                                 <h5>Contact Tab</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id natus quo accusantium? Itaque nisi doloremque possimus fugiat quas eos aspernatur inventore beatae expedita voluptate. Tempora praesentium sint excepturi suscipit?</p>
+                                <h5>Contact Tab</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id natus quo
+                                    accusantium? Itaque nisi doloremque possimus fugiat quas eos aspernatur inventore
+                                    beatae expedita voluptate. Tempora praesentium sint excepturi suscipit?</p>
                             </div>
                             <div class="tab-pane fade" id="service-tab">
-                                 <h5>Services Tab</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id natus quo accusantium? Itaque nisi doloremque possimus fugiat quas eos aspernatur inventore beatae expedita voluptate. Tempora praesentium sint excepturi suscipit?</p>
+                                <h5>Services Tab</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id natus quo
+                                    accusantium? Itaque nisi doloremque possimus fugiat quas eos aspernatur inventore
+                                    beatae expedita voluptate. Tempora praesentium sint excepturi suscipit?</p>
                             </div>
                         </div>
                     </section>
@@ -550,7 +585,8 @@
                                 <li class="page-item"><a href="" class="page-link">3</a></li>
                                 <li class="page-item"><a href="" class="page-link">4</a></li>
                                 <li class="page-item active"><a href="" class="page-link">5</a></li>
-                                <li class="page-item disabled" aria-disabled="true"><a href="#" class="page-link" tabindex="-1">Next</a></li>
+                                <li class="page-item disabled" aria-disabled="true"><a href="#" class="page-link"
+                                        tabindex="-1">Next</a></li>
                             </ul>
                         </nav>
                         <nav aria-label="pagination" class="mt-3">
@@ -561,7 +597,8 @@
                                 <li class="page-item"><a href="" class="page-link">3</a></li>
                                 <li class="page-item"><a href="" class="page-link">4</a></li>
                                 <li class="page-item active"><a href="" class="page-link">5</a></li>
-                                <li class="page-item disabled" aria-disabled="true"><a href="#" class="page-link" tabindex="-1">Next</a></li>
+                                <li class="page-item disabled" aria-disabled="true"><a href="#" class="page-link"
+                                        tabindex="-1">Next</a></li>
                             </ul>
                         </nav>
                         <nav aria-label="pagination" class="mt-3">
@@ -572,7 +609,8 @@
                                 <li class="page-item"><a href="" class="page-link">3</a></li>
                                 <li class="page-item"><a href="" class="page-link">4</a></li>
                                 <li class="page-item active"><a href="" class="page-link">5</a></li>
-                                <li class="page-item disabled" aria-disabled="true"><a href="#" class="page-link" tabindex="-1">Next</a></li>
+                                <li class="page-item disabled" aria-disabled="true"><a href="#" class="page-link"
+                                        tabindex="-1">Next</a></li>
                             </ul>
                         </nav>
                     </section>
@@ -607,10 +645,11 @@
                                             <span class="placeholder w-100"></span>
                                             <span class="placeholder w-75"></span>
                                         </p>
-                                        <div class="d-flex justify-content-between placeholder-glow  align-items-center">
-                                            <div class="h3 w-25">                                                
+                                        <div
+                                            class="d-flex justify-content-between placeholder-glow  align-items-center">
+                                            <div class="h3 w-25">
                                                 <span class="placeholder w-100"></span>
-                                            </div>                                            
+                                            </div>
                                             <span class="placeholder w-25"></span>
                                         </div>
                                     </div>
@@ -621,14 +660,180 @@
                     <section id="popover" class="mt-5">
                         <h2 class="mb-4">Popover</h2>
                         <p>
-                            Lorem ipsum dolor sit amet <a href="#" aria-label="click here to view details" data-bs-trigger="hover" role="button" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">consectetur</a> adipisicing elit. Libero quidem adipisci nostrum minima maxime fugiat eligendi expedita tenetur aperiam itaque?
+                            Lorem ipsum dolor sit amet <a href="#" aria-label="click here to view details"
+                                data-bs-trigger="hover" role="button" data-bs-toggle="popover"
+                                data-bs-title="Popover title"
+                                data-bs-content="And here's some amazing content. It's very engaging. Right?">consectetur</a>
+                            adipisicing elit. Libero quidem adipisci nostrum minima maxime fugiat eligendi expedita
+                            tenetur aperiam itaque?
                         </p>
+                    </section>
+                    <section class="mt-5">
+                        <h2>Tab + Accordion</h2>
+                        <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#collapseOne" type="button" role="tab" aria-controls="collapseOne"
+                                    aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#collapseTwo" type="button" role="tab" aria-controls="collapseTwo"
+                                    aria-selected="false">Profile</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#collapseThree" type="button" role="tab"
+                                    aria-controls="collapseThree" aria-selected="false">Contact</button>
+                            </li>
+                        </ul>
+                        <div class="accordion tab-content" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header d-lg-none">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Home
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse tab-pane collapse show active"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item’s accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It’s also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header d-lg-none">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Profile
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse tab-pane collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item’s accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It’s also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header d-lg-none">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Contact
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse tab-pane collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item’s accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It’s also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mt-5" id="progress">
+                        <h2 class="mb-4">Progress</h2>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="10"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 10%">10%</div>
+                        </div>
+                        <div class="progress mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                        </div>
+                        <div class="progress mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar text-bg-success" style="width: 50%">50%</div>
+                        </div>
+                        <div class="progress mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="69"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-success"
+                                style="width: 22%">UI 22%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-info"
+                                style="width: 25%">API 25%</div>
+                            <div class="progress-bar progress-bar-striped text-bg-warning" style="width: 22%">Cloud 22%
+                            </div>
+                        </div>
+                    </section>
+                    <section id="spinner" class="mt-5">
+                        <h2>Spinner</h2>
+
+                        <div class="spinner-border">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-primary">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-info">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="spinner-border spinner-border-sm text-info">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-info">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="spinner-grow spinner-grow-sm text-info">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </section>
+                    <section class="mt-5" id="toast">
+                        <h2>Toasts</h2>
+                        <button id="toastviewer">Show Toast</button>
+
+                    </section>
+                    <section id="tooltip" class="mt-5">
+                        <h2>Tooltip</h2>
+                        <p>Lorem, ipsum dolor sit amet <span role="button" class="text-underline" data-bs-toggle="tooltip" data-bs-title="This is a tooltip">consectetur</span> adipisicing elit. Necessitatibus voluptas doloribus quasi blanditiis asperiores voluptatum maxime rem ab numquam consequuntur!</p>
                     </section>
                 </main>
             </div>
         </div>
     </div>
-
+    <div class="toast-container position-fixed bottom-0 end-0">
+        <div class="toast" id="toastOne" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+        <div class="toast" id="toastTwo" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -636,7 +841,20 @@
 
     <script>
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl, {container: "#popover"}))
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl, { container: "#popover" }))
+
+        const toastviewer = document.getElementById('toastviewer');
+        const toastOne = document.getElementById('toastOne');
+        if (toastviewer) {
+            let toast = bootstrap.Toast.getOrCreateInstance(toastOne);
+            toastviewer.addEventListener('click', function () {
+                toast.show()
+            })
+        }
+
+
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
 </body>
 

@@ -1,0 +1,107 @@
+// Header Section
+*{
+    box-sizing: border-box;
+}
+.navbar input::placeholder{
+    font-size: $font-size-xs;
+}
+
+.container{
+    --container-max-width: 100%;
+    @include media-breakpoint-up(sm){
+        --container-max-width: #{map-get($container-max-widths, 'sm')};
+    }
+    @include media-breakpoint-up(md){
+        --container-max-width: #{map-get($container-max-widths, 'md')};
+    }
+    @include media-breakpoint-up(lg){
+        --container-max-width: #{map-get($container-max-widths, 'lg')};
+    }
+    @include media-breakpoint-up(xl){
+        --container-max-width: #{map-get($container-max-widths, 'xl')};
+    }
+    @include media-breakpoint-up(xxl){
+        --container-max-width: #{map-get($container-max-widths, 'xxl')};
+    }
+}
+.container-max{
+    max-width: calc((100% - var(--container-max-width)) / 2 + var(--container-max-width));
+}
+
+
+// button Circle
+.btn-circle{
+    padding: 0;
+    --size: 46px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.btn-circle-sm{
+    --size: 34px
+}
+.btn-circle-lg{
+    --size: 72px
+}
+
+.btn-secondary{
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #{$body-color};
+  --bs-btn-border-color:  #{$secondary};
+  --bs-btn-hover-border-color: #{$body-color};
+    --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #{$body-color};
+}
+
+// Section HeDING
+.heading-top-line{
+    display: block;
+    width: 1.25rem;
+    height: 2.5rem;
+    background: $secondary;
+    border-radius: .25rem;
+}
+
+
+
+// Product Card
+
+.product-card { 
+    .image-wrapper{
+        width: 100%;
+        aspect-ratio: 270/250;
+    }
+    .badge{
+        top: .75rem;
+        left: .75rem
+    }
+    .btn-circle{
+        background-color: white;
+        &:hover{
+            background: $secondary;
+            img{
+                filter: brightness(0) invert(1)
+            }
+        }
+    }
+    .buttons{
+        top: .75rem;
+        right: .75rem
+    }
+    a{
+        translate: 0 110%;
+        transition: .4s all
+    }
+    &:hover{
+        a{
+           translate: 0 0%; 
+        }
+    }
+    .card-title{
+        font-family: $font-family-base;
+    }
+}

@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import './variables';
+@import './mixins';
+
+.text-primary{
+    color: $primary
+}
+.bg-secondary{
+    background: $secondary
+}
+
+header{
+    background: $secondary;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        a{
+            color: #fff;
+            &:hover{
+                color: $primary
+            }
+            &:focus{
+
+            }
+            &:active{
+
+            }
+        }
+    }
+}
+
+.btn{
+    @include btn-size($btn-font-size-base, $btn-padding-x, $btn-padding-y)
+}
+.btn-sm{
+    @include btn-size($btn-font-size-sm, $btn-padding-x-sm, $btn-padding-y-sm)
+}
+.btn-lg{
+    @include btn-size($btn-font-size-lg, $btn-padding-x-lg, $btn-padding-y-lg)
+}
+
+
+.btn-primary{
+    @extend .btn;
+    background-color: $primary;
+    color: #fff
+}
+
+.btn-secondary{
+    @extend .btn;
+    background-color: $secondary;
+    color: #fff;
+}
+
