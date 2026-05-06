@@ -38,6 +38,9 @@
     border-radius: 50%;
     display: grid;
     place-items: center;
+    &:focus{
+        background-color: transparent;
+    }
 }
 
 .btn-circle-sm{
@@ -66,7 +69,9 @@
     border-radius: .25rem;
 }
 
-
+small{
+    font-size: $font-size-xs;
+}
 
 // Product Card
 
@@ -104,4 +109,29 @@
     .card-title{
         font-family: $font-family-base;
     }
+      .color-options{
+        
+      }
+    .color-options label span{
+        background-color: var(--bg-color);
+    }
+    label.btn-circle{--size: 20px}
+    .btn-check + label{border: 2px solid var(--bg-color, white); box-sizing: border-box; background:transparent}
+    .btn-check:checked + label{border-color: $dark; padding: 2px}
+
+}
+
+
+
+// Footer
+
+footer form{
+    max-width: 90%;
+    .form-control::placeholder{
+        color: rgba(var(--bs-light-rgb), var(--bs-text-opacity));
+        opacity: .4;
+    }
+}
+footer a.link-light:hover{
+    color: $secondary !important;
 }

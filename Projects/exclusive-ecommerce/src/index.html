@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exclusive E-Commerce Store</title>
+    <meta name="description" content="Exclusive E-Commerce Store">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,7 +23,7 @@
                 <a href="#" class="text-reset text-decoration-underline">ShopNow</a>
             </div>
             <form action="#">
-                <select name="language" class="form-select py-0 rounded-0 pe-5" id="langSelect">
+                <select aria-label="select language" name="language" class="form-select form-select-sm py-0 px-6 rounded-0 pe-5" id="langSelect">
                     <option value="" disabled>Language</option>
                     <option value="en" class="text-dark">English</option>
                     <option value="hi">Hindi</option>
@@ -34,7 +35,9 @@
         <div class="container p-0">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand h4 fw-bold" href="#"><h1 class="h4 mb-0"></h1>Exclusive</a>
+                    <a class="navbar-brand fw-bold" href="#">
+                        <h1 class="h4 mb-0">Exclusive</h1>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -58,14 +61,14 @@
                         </ul>
                         <form class="d-flex me-16 border rounded-2" role="search">
                             <div class="input-group">
-                                <input class="form-control border-0 me-2" type="search"
+                                <input class="form-control form-control-sm border-0 me-2" type="search"
                                     placeholder="What are you looking for?" aria-label="Search" />
-                                <button class="btn ps-0" aria-label="Search"><img src="./images/search-icon.svg"
+                                <button class="btn ps-0 pe-16 py-6" aria-label="Search"><img src="./images/search-icon.svg"
                                         alt=""></button>
                             </div>
                         </form>
-                        <a href="#" class="btn" aria-label="Wishlist"><img src="./images/wishlist-icon.svg" alt=""></a>
-                        <a href="#" class="btn" aria-label="Cart"><img src="./images/cart-icon.svg" alt=""></a>
+                        <a href="#" class="btn p-0 px-16" aria-label="Wishlist"><img src="./images/wishlist-icon.svg" alt=""></a>
+                        <a href="#" class="btn p-0 px-6" aria-label="Cart"><img src="./images/cart-icon.svg" alt=""></a>
                     </div>
                 </div>
             </nav>
@@ -94,8 +97,8 @@
                         <div class="pt-40 pt-lg-60">
                             <div id="top-banner" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#top-banner" data-bs-slide-to="0" class="active"
-                                        aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#top-banner" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#top-banner" data-bs-slide-to="1"
                                         aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#top-banner" data-bs-slide-to="2"
@@ -106,7 +109,8 @@
                                         <div class="container-fluid ps-30 ps-lg-60">
                                             <div class="row">
                                                 <div class="col-lg-5">
-                                                    <div class="pt-40 pt-xl-60 pb-30 d-flex flex-column align-items-center align-items-lg-start pb-xl-48">
+                                                    <div
+                                                        class="pt-40 pt-xl-60 pb-30 d-flex flex-column align-items-center align-items-lg-start pb-xl-48">
                                                         <div class="d-flex align-items-center gap-16 gap-md-24 mb-16">
                                                             <img src="./images/apple-logo.svg"
                                                                 class="img-fluid d-block lh-1 flex-shrink-0" alt="">
@@ -115,13 +119,14 @@
                                                         <div class="h1 mb-24">Up to 10% off Voucher</div>
                                                         <a href="#" class="link-light icon-link"><span
                                                                 class="d-inline-block py-6 lh-1 border-bottom">Shop
-                                                                Now</span><img src="./images/icons-arrow-right-white.svg"
-                                                                alt=""></a>
+                                                                Now</span><img
+                                                                src="./images/icons-arrow-right-white.svg" alt=""></a>
                                                     </div>
-    
+
                                                 </div>
                                                 <div class="col-lg-7 align-self-center text-center">
-                                                    <img src="./images/hero_endframe_iphone.png" class="main-image" alt="">
+                                                    <img src="./images/hero_endframe_iphone.png" class="main-image"
+                                                        alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +135,8 @@
                                         <div class="container-fluid ps-30 ps-lg-60">
                                             <div class="row">
                                                 <div class="col-lg-5">
-                                                    <div class="pt-40 pt-xl-60 pb-30 d-flex flex-column align-items-center align-items-lg-start pb-xl-48">
+                                                    <div
+                                                        class="pt-40 pt-xl-60 pb-30 d-flex flex-column align-items-center align-items-lg-start pb-xl-48">
                                                         <div class="d-flex align-items-center gap-16 gap-md-24 mb-16">
                                                             <img src="./images/apple-logo.svg"
                                                                 class="img-fluid d-block lh-1 flex-shrink-0" alt="">
@@ -139,13 +145,14 @@
                                                         <div class="h1 mb-24">Up to 10% off Voucher</div>
                                                         <a href="#" class="link-light icon-link"><span
                                                                 class="d-inline-block py-6 lh-1 border-bottom">Shop
-                                                                Now</span><img src="./images/icons-arrow-right-white.svg"
-                                                                alt=""></a>
+                                                                Now</span><img
+                                                                src="./images/icons-arrow-right-white.svg" alt=""></a>
                                                     </div>
-    
+
                                                 </div>
                                                 <div class="col-lg-7 align-self-center text-center">
-                                                    <img src="./images/hero_endframe_iphone.png" class="main-image" alt="">
+                                                    <img src="./images/hero_endframe_iphone.png" class="main-image"
+                                                        alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -154,7 +161,8 @@
                                         <div class="container-fluid ps-30 ps-lg-60">
                                             <div class="row">
                                                 <div class="col-lg-5">
-                                                    <div class="pt-40 pt-xl-60 pb-30 d-flex flex-column align-items-center align-items-lg-start pb-xl-48">
+                                                    <div
+                                                        class="pt-40 pt-xl-60 pb-30 d-flex flex-column align-items-center align-items-lg-start pb-xl-48">
                                                         <div class="d-flex align-items-center gap-16 gap-md-24 mb-16">
                                                             <img src="./images/apple-logo.svg"
                                                                 class="img-fluid d-block lh-1 flex-shrink-0" alt="">
@@ -163,13 +171,14 @@
                                                         <div class="h1 mb-24">Up to 10% off Voucher</div>
                                                         <a href="#" class="link-light icon-link"><span
                                                                 class="d-inline-block py-6 lh-1 border-bottom">Shop
-                                                                Now</span><img src="./images/icons-arrow-right-white.svg"
-                                                                alt=""></a>
+                                                                Now</span><img
+                                                                src="./images/icons-arrow-right-white.svg" alt=""></a>
                                                     </div>
-    
+
                                                 </div>
                                                 <div class="col-lg-7 align-self-center text-center">
-                                                    <img src="./images/hero_endframe_iphone.png" class="main-image" alt="">
+                                                    <img src="./images/hero_endframe_iphone.png" class="main-image"
+                                                        alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -183,9 +192,11 @@
         </section>
         <section class="flash-sales pt-40 pt-lg-70">
             <div class="container">
-                <div class="section-heading mb-40 gap-16 mb-xl-60 d-flex flex-column flex-md-row align-items-md-end justify-content-md-between">
+                <div
+                    class="section-heading mb-40 gap-16 mb-xl-60 d-flex flex-column flex-md-row align-items-md-end justify-content-md-between">
                     <div class="d-flex flex-column flex-sm-row align-items-sm-end flex-wrap">
-                        <div class="heading-top d-flex gap-16 align-items-center text-secondary fw-semibold w-100"><span class="heading-top-line"></span> Today&apos;s</div>
+                        <div class="heading-top d-flex gap-16 align-items-center text-secondary fw-semibold w-100"><span
+                                class="heading-top-line"></span> Today&apos;s</div>
                         <h2 class="me-lg-20">Flash Sales</h2>
                         <div class="offer-ends gap-16 ms-sm-24 ms-lg-60 d-flex align-items-center">
                             <div class="time d-flex flex-column">
@@ -224,19 +235,25 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="product-card card border-0">
-                                <div class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
-                                    <img src="./images/game-controller.png" class="img-fluid" alt="red black game controller">
-                                   
+                                <div
+                                    class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                    <img src="./images/game-controller.png" class="img-fluid"
+                                        alt="red black game controller">
+
                                     <span class="badge bg-secondary position-absolute">-40%</span>
                                     <div class="buttons d-flex flex-column gap-16 position-absolute ">
-                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist"><img src="./images/wishlist-icon.svg"></button>
-                                        <button class="btn btn-circle btn-circle-sm" title="Quick View"><img src="./images/quick-view-icon.svg"></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="add to wishlist"><img
+                                                src="./images/wishlist-icon.svg" alt=""></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                                src="./images/quick-view-icon.svg" alt=""></button>
                                     </div>
-                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to Cart</a>
+                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                        Cart</a>
                                 </div>
                                 <div class="card-body px-0">
                                     <h3 class="card-title h6">HAVIT HV-G92 Gamepad</h3>
-                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del class="text-body-tertiary">$160</del></div>
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del
+                                            class="text-body-tertiary">$160</del></div>
                                     <div class="rating mt-6 d-flex align-items-center gap-6">
                                         <div class="stars" aria-label="5 star">
                                             <img src="./images/star-icon.svg" alt="">
@@ -252,19 +269,25 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="product-card card border-0">
-                                <div class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
-                                    <img src="./images/game-controller.png" class="img-fluid" alt="red black game controller">
-                                   
+                                <div
+                                    class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                    <img src="./images/game-controller.png" class="img-fluid"
+                                        alt="red black game controller">
+
                                     <span class="badge bg-secondary position-absolute">-40%</span>
                                     <div class="buttons d-flex flex-column gap-16 position-absolute ">
-                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist"><img src="./images/wishlist-icon.svg"></button>
-                                        <button class="btn btn-circle btn-circle-sm" title="Quick View"><img src="./images/quick-view-icon.svg"></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist" ><img
+                                                src="./images/wishlist-icon.svg" alt=""></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                                src="./images/quick-view-icon.svg" alt=""></button>
                                     </div>
-                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to Cart</a>
+                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                        Cart</a>
                                 </div>
                                 <div class="card-body px-0">
                                     <h3 class="card-title h6">HAVIT HV-G92 Gamepad</h3>
-                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del class="text-body-tertiary">$160</del></div>
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del
+                                            class="text-body-tertiary">$160</del></div>
                                     <div class="rating mt-6 d-flex align-items-center gap-6">
                                         <div class="stars" aria-label="5 star">
                                             <img src="./images/star-icon.svg" alt="">
@@ -280,19 +303,25 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="product-card card border-0">
-                                <div class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
-                                    <img src="./images/game-controller.png" class="img-fluid" alt="red black game controller">
-                                   
+                                <div
+                                    class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                    <img src="./images/game-controller.png" class="img-fluid"
+                                        alt="red black game controller">
+
                                     <span class="badge bg-secondary position-absolute">-40%</span>
                                     <div class="buttons d-flex flex-column gap-16 position-absolute ">
-                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist"><img src="./images/wishlist-icon.svg"></button>
-                                        <button class="btn btn-circle btn-circle-sm" title="Quick View"><img src="./images/quick-view-icon.svg"></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                                src="./images/wishlist-icon.svg" alt=""></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Quick View"  aria-label="Quick View"><img
+                                                src="./images/quick-view-icon.svg" alt=""></button>
                                     </div>
-                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to Cart</a>
+                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                        Cart</a>
                                 </div>
                                 <div class="card-body px-0">
                                     <h3 class="card-title h6">HAVIT HV-G92 Gamepad</h3>
-                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del class="text-body-tertiary">$160</del></div>
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del
+                                            class="text-body-tertiary">$160</del></div>
                                     <div class="rating mt-6 d-flex align-items-center gap-6">
                                         <div class="stars" aria-label="5 star">
                                             <img src="./images/star-icon.svg" alt="">
@@ -308,19 +337,25 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="product-card card border-0">
-                                <div class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
-                                    <img src="./images/game-controller.png" class="img-fluid" alt="red black game controller">
-                                   
+                                <div
+                                    class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                    <img src="./images/game-controller.png" class="img-fluid"
+                                        alt="red black game controller">
+
                                     <span class="badge bg-secondary position-absolute">-40%</span>
                                     <div class="buttons d-flex flex-column gap-16 position-absolute ">
-                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist"><img src="./images/wishlist-icon.svg"></button>
-                                        <button class="btn btn-circle btn-circle-sm" title="Quick View"><img src="./images/quick-view-icon.svg"></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                                src="./images/wishlist-icon.svg" alt=""></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                                src="./images/quick-view-icon.svg" alt=""></button>
                                     </div>
-                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to Cart</a>
+                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                        Cart</a>
                                 </div>
                                 <div class="card-body px-0">
                                     <h3 class="card-title h6">HAVIT HV-G92 Gamepad</h3>
-                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del class="text-body-tertiary">$160</del></div>
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del
+                                            class="text-body-tertiary">$160</del></div>
                                     <div class="rating mt-6 d-flex align-items-center gap-6">
                                         <div class="stars" aria-label="5 star">
                                             <img src="./images/star-icon.svg" alt="">
@@ -336,19 +371,25 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="product-card card border-0">
-                                <div class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
-                                    <img src="./images/game-controller.png" class="img-fluid" alt="red black game controller">
-                                   
+                                <div
+                                    class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                    <img src="./images/game-controller.png" class="img-fluid"
+                                        alt="red black game controller">
+
                                     <span class="badge bg-secondary position-absolute">-40%</span>
                                     <div class="buttons d-flex flex-column gap-6 position-absolute ">
-                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist"><img src="./images/wishlist-icon.svg"></button>
-                                        <button class="btn btn-circle btn-circle-sm" title="Quick View"><img src="./images/quick-view-icon.svg"></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                                src="./images/wishlist-icon.svg" alt=""></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                                src="./images/quick-view-icon.svg" alt=""></button>
                                     </div>
-                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to Cart</a>
+                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                        Cart</a>
                                 </div>
                                 <div class="card-body px-0">
                                     <h3 class="card-title h6">HAVIT HV-G92 Gamepad</h3>
-                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del class="text-body-tertiary">$160</del></div>
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del
+                                            class="text-body-tertiary">$160</del></div>
                                     <div class="rating mt-6 d-flex align-items-center gap-6">
                                         <div class="stars" aria-label="5 star">
                                             <img src="./images/star-icon.svg" alt="">
@@ -364,19 +405,25 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="product-card card border-0">
-                                <div class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
-                                    <img src="./images/game-controller.png" class="img-fluid" alt="red black game controller">
-                                   
+                                <div
+                                    class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                    <img src="./images/game-controller.png" class="img-fluid"
+                                        alt="red black game controller">
+
                                     <span class="badge bg-secondary position-absolute">-40%</span>
                                     <div class="buttons d-flex flex-column gap-16 position-absolute ">
-                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist"><img src="./images/wishlist-icon.svg"></button>
-                                        <button class="btn btn-circle btn-circle-sm" title="Quick View"><img src="./images/quick-view-icon.svg"></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                                src="./images/wishlist-icon.svg" alt=""></button>
+                                        <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                                src="./images/quick-view-icon.svg" alt=""></button>
                                     </div>
-                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to Cart</a>
+                                    <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                        Cart</a>
                                 </div>
                                 <div class="card-body px-0">
                                     <h3 class="card-title h6">HAVIT HV-G92 Gamepad</h3>
-                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del class="text-body-tertiary">$160</del></div>
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$120</span> <del
+                                            class="text-body-tertiary">$160</del></div>
                                     <div class="rating mt-6 d-flex align-items-center gap-6">
                                         <div class="stars" aria-label="5 star">
                                             <img src="./images/star-icon.svg" alt="">
@@ -400,9 +447,11 @@
         </section>
         <section class="categories pt-40 pt-lg-70">
             <div class="container  pb-40 pb-lg-70 border-bottom">
-                <div class="section-heading mb-40 gap-16 mb-xl-60 d-flex flex-column flex-md-row align-items-md-end justify-content-md-between">
+                <div
+                    class="section-heading mb-40 gap-16 mb-xl-60 d-flex flex-column flex-md-row align-items-md-end justify-content-md-between">
                     <div class="d-flex flex-column flex-sm-row align-items-sm-end flex-wrap">
-                        <div class="heading-top d-flex gap-16 align-items-center text-secondary fw-semibold w-100"><span class="heading-top-line"></span> Categories</div>
+                        <div class="heading-top d-flex gap-16 align-items-center text-secondary fw-semibold w-100"><span
+                                class="heading-top-line"></span> Categories</div>
                         <h2 class="me-lg-20">Browse By Category</h2>
                     </div>
                     <div class="swiper-buttons d-flex gap-6">
@@ -420,7 +469,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-cellphone.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Phones</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Phones</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -428,7 +478,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-computer.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Computers</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Computers</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -436,7 +487,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-smartwatch.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Smartwatch</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#"
+                                            class="stretched-link">Smartwatch</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -444,7 +496,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-camera.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Camera</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Camera</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -452,7 +505,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-headphone.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Headphones</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#"
+                                            class="stretched-link">Headphones</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -460,7 +514,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-gamepad.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Gaming</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Gaming</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -468,7 +523,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-computer.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Computers</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Computers</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -476,7 +532,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-smartwatch.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Smartwatch</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#"
+                                            class="stretched-link">Smartwatch</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -484,7 +541,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-camera.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Camera</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Camera</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -492,7 +550,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-headphone.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Headphones</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#"
+                                            class="stretched-link">Headphones</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -500,7 +559,8 @@
                             <div class="category card position-relative">
                                 <div class="card-body text-center">
                                     <img src="./images/category-gamepad.svg" alt="">
-                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Gaming</a></h3>
+                                    <h3 class="h6 mb-0 mt-16 fw-normal"><a href="#" class="stretched-link">Gaming</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -510,9 +570,11 @@
         </section>
         <section class="best-selling pt-40 pt-lg-70">
             <div class="container  pb-40 pb-lg-70 border-bottom">
-                <div class="section-heading mb-40 gap-16 mb-xl-60 d-flex flex-column flex-md-row align-items-md-end justify-content-md-between">
+                <div
+                    class="section-heading mb-40 gap-16 mb-xl-60 d-flex flex-column flex-md-row align-items-md-end justify-content-md-between">
                     <div class="d-flex flex-column flex-sm-row align-items-sm-end flex-wrap">
-                        <div class="heading-top d-flex gap-16 align-items-center text-secondary fw-semibold w-100"><span class="heading-top-line"></span>This Month</div>
+                        <div class="heading-top d-flex gap-16 align-items-center text-secondary fw-semibold w-100"><span
+                                class="heading-top-line"></span>This Month</div>
                         <h2 class="me-lg-20">Best Selling Products</h2>
                     </div>
                     <div class="btn btn-secondary">View All</div>
@@ -520,19 +582,23 @@
                 <div class="row gy-30 gy-xl-0 row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
                     <div class="col">
                         <div class="product-card card border-0">
-                            <div class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
                                 <img src="./images/hoodie.png" class="img-fluid" alt="red black game controller">
-                                
+
                                 <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
                                 <div class="buttons d-flex flex-column gap-6 position-absolute ">
-                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist"><img src="./images/wishlist-icon.svg"></button>
-                                    <button class="btn btn-circle btn-circle-sm" title="Quick View"><img src="./images/quick-view-icon.svg"></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
                                 </div>
                                 <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to Cart</a>
                             </div>
                             <div class="card-body px-0">
                                 <h3 class="card-title h6">The north coat</h3>
-                                <div class="price d-flex gap-16"><span class="text-secondary">$260</span> <del class="text-body-tertiary">$360</del></div>
+                                <div class="price d-flex gap-16"><span class="text-secondary">$260</span> <del
+                                        class="text-body-tertiary">$360</del></div>
                                 <div class="rating mt-6 d-flex align-items-center gap-6">
                                     <div class="stars" aria-label="5 star">
                                         <img src="./images/star-icon.svg" alt="">
@@ -548,19 +614,23 @@
                     </div>
                     <div class="col">
                         <div class="product-card card border-0">
-                            <div class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
                                 <img src="./images/leather-bag.png" class="img-fluid" alt="red black game controller">
-                                
+
                                 <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
                                 <div class="buttons d-flex flex-column gap-6 position-absolute ">
-                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist"><img src="./images/wishlist-icon.svg"></button>
-                                    <button class="btn btn-circle btn-circle-sm" title="Quick View"><img src="./images/quick-view-icon.svg"></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
                                 </div>
                                 <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to Cart</a>
                             </div>
                             <div class="card-body px-0">
                                 <h3 class="card-title h6">Gucci duffle bag</h3>
-                                <div class="price d-flex gap-16"><span class="text-secondary">$960</span> <del class="text-body-tertiary">$1160</del></div>
+                                <div class="price d-flex gap-16"><span class="text-secondary">$960</span> <del
+                                        class="text-body-tertiary">$1160</del></div>
                                 <div class="rating mt-6 d-flex align-items-center gap-6">
                                     <div class="stars" aria-label="5 star">
                                         <img src="./images/star-icon.svg" alt="">
@@ -576,19 +646,23 @@
                     </div>
                     <div class="col">
                         <div class="product-card card border-0">
-                            <div class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
                                 <img src="./images/hoodie.png" class="img-fluid" alt="red black game controller">
-                                
+
                                 <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
                                 <div class="buttons d-flex flex-column gap-6 position-absolute ">
-                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist"><img src="./images/wishlist-icon.svg"></button>
-                                    <button class="btn btn-circle btn-circle-sm" title="Quick View"><img src="./images/quick-view-icon.svg"></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
                                 </div>
                                 <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to Cart</a>
                             </div>
                             <div class="card-body px-0">
                                 <h3 class="card-title h6">The north coat</h3>
-                                <div class="price d-flex gap-16"><span class="text-secondary">$260</span> <del class="text-body-tertiary">$360</del></div>
+                                <div class="price d-flex gap-16"><span class="text-secondary">$260</span> <del
+                                        class="text-body-tertiary">$360</del></div>
                                 <div class="rating mt-6 d-flex align-items-center gap-6">
                                     <div class="stars" aria-label="5 star">
                                         <img src="./images/star-icon.svg" alt="">
@@ -604,19 +678,23 @@
                     </div>
                     <div class="col">
                         <div class="product-card card border-0">
-                            <div class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
                                 <img src="./images/leather-bag.png" class="img-fluid" alt="red black game controller">
-                                
+
                                 <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
                                 <div class="buttons d-flex flex-column gap-6 position-absolute ">
-                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist"><img src="./images/wishlist-icon.svg"></button>
-                                    <button class="btn btn-circle btn-circle-sm" title="Quick View"><img src="./images/quick-view-icon.svg"></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
                                 </div>
                                 <a href="#" class="btn d-grid w-100 btn-dark position-absolute bottom-0">Add to Cart</a>
                             </div>
                             <div class="card-body px-0">
                                 <h3 class="card-title h6">Gucci duffle bag</h3>
-                                <div class="price d-flex gap-16"><span class="text-secondary">$960</span> <del class="text-body-tertiary">$1160</del></div>
+                                <div class="price d-flex gap-16"><span class="text-secondary">$960</span> <del
+                                        class="text-body-tertiary">$1160</del></div>
                                 <div class="rating mt-6 d-flex align-items-center gap-6">
                                     <div class="stars" aria-label="5 star">
                                         <img src="./images/star-icon.svg" alt="">
@@ -641,19 +719,23 @@
                             <span class="h6 fw-semibold text-success">Categories</span>
                             <h2 class="h1 fw-semibold mb-24 mb-xl-30">Enhance Your Music Experience</h2>
                             <div class="timer d-flex gap-6 gap-sm-16 gap-xl-24 mb-30 mb-xl-40">
-                                <div class="time btn-circle d-flex flex-column justify-content-center btn-circle-lg bg-white">
+                                <div
+                                    class="time btn-circle d-flex flex-column justify-content-center btn-circle-lg bg-white">
                                     <div class="days fw-semibold text-body lh-1">05</div>
                                     <small class="text-body lh-1">Days</small>
                                 </div>
-                                <div class="time btn-circle d-flex flex-column justify-content-center btn-circle-lg bg-white">
+                                <div
+                                    class="time btn-circle d-flex flex-column justify-content-center btn-circle-lg bg-white">
                                     <div class="hours fw-semibold text-body lh-1">23</div>
                                     <small class="text-body lh-1">Hours</small>
                                 </div>
-                                <div class="time btn-circle d-flex flex-column justify-content-center btn-circle-lg bg-white">
+                                <div
+                                    class="time btn-circle d-flex flex-column justify-content-center btn-circle-lg bg-white">
                                     <div class="minutes fw-semibold text-body lh-1">59</div>
                                     <small class="text-body lh-1">Minutes</small>
                                 </div>
-                                <div class="time btn-circle d-flex flex-column justify-content-center btn-circle-lg bg-white">
+                                <div
+                                    class="time btn-circle d-flex flex-column justify-content-center btn-circle-lg bg-white">
                                     <div class="seconds fw-semibold text-body lh-1">59</div>
                                     <small class="text-body lh-1">Seconds</small>
                                 </div>
@@ -669,63 +751,537 @@
                 </div>
             </div>
         </section>
+        <section class="best-selling pt-40 pt-lg-70">
+            <div class="container  pb-40 pb-lg-70 ">
+                <div
+                    class="section-heading mb-24 gap-16 mb-xl-40 d-flex flex-column flex-md-row align-items-md-end justify-content-md-between">
+                    <div class="d-flex flex-column flex-sm-row align-items-sm-end flex-wrap">
+                        <div class="heading-top d-flex gap-16 align-items-center text-secondary fw-semibold w-100"><span
+                                class="heading-top-line"></span>Our Products</div>
+                        <h2 class="me-lg-20">Explore Our Products</h2>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-40 gy-xl-60">
+                    <div class="col">
+                        <div class="product-card card border-0">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                <img src="./images/breed-dry-dog-food.png" class="img-fluid" alt="breed dry dog food">
+
+                                <span class="badge bg-success position-absolute py-6 px-16">New</span>
+                                <div class="buttons d-flex flex-column gap-6 position-absolute ">
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"> <img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
+                                </div>
+                                <a href="#" class="btn btn-sm d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                    Cart</a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h6">Breed Dry Dog Food</h3>
+                                <div class="d-flex gap-6 align-items-center">
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$100</span></div>
+                                    <div class="rating d-flex align-items-center gap-6">
+                                        <div class="stars" aria-label="5 star">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                        </div>
+                                        (65)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card border-0">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                <img src="./images/canon-eos-dslr-camera.png" class="img-fluid"
+                                    alt="CANON EOS DSLR Camera">
+
+                                <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
+                                <div class="buttons d-flex flex-column gap-6 position-absolute ">
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
+                                </div>
+                                <a href="#" class="btn btn-sm d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                    Cart</a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h6">CANON EOS DSLR Camera</h3>
+                                <div class="d-flex gap-6 align-items-center">
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$100</span></div>
+                                    <div class="rating d-flex align-items-center gap-6">
+                                        <div class="stars" aria-label="5 star">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                        </div>
+                                        (65)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card border-0">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                <img src="./images/breed-dry-dog-food.png" class="img-fluid" alt="breed dry dog food">
+
+                                <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
+                                <div class="buttons d-flex flex-column gap-6 position-absolute ">
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
+                                </div>
+                                <a href="#" class="btn btn-sm d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                    Cart</a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h6">Breed Dry Dog Food</h3>
+                                <div class="d-flex gap-6 align-items-center">
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$100</span></div>
+                                    <div class="rating d-flex align-items-center gap-6">
+                                        <div class="stars" aria-label="5 star">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                        </div>
+                                        (65)
+                                    </div>
+                                </div>
+                                <div class="color-options mt-6 d-flex gap-6">
+                                    <input type="radio" class="btn-check" name="clropt" id="clropt1" autocomplete="off"
+                                        checked >
+                                    <label style="--bg-color: #FB1314" role="button" class="btn-circle btn-circle-sm"
+                                        for="clropt1" aria-label="red"><span class="d-block w-100 h-100 rounded-circle"></span></label>
+                                    <input type="radio" class="btn-check" name="clropt" id="clropt2" autocomplete="off">
+                                    <label style="--bg-color: #DB4444" aria-label="Green" role="button" class="btn-circle btn-circle-sm"
+                                        for="clropt2"><span class="d-block w-100 h-100 rounded-circle"></span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card border-0">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                <img src="./images/canon-eos-dslr-camera.png" class="img-fluid"
+                                    alt="CANON EOS DSLR Camera">
+
+                                <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
+                                <div class="buttons d-flex flex-column gap-6 position-absolute ">
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
+                                </div>
+                                <a href="#" class="btn btn-sm d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                    Cart</a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h6">CANON EOS DSLR Camera</h3>
+                                <div class="d-flex gap-6 align-items-center">
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$100</span></div>
+                                    <div class="rating d-flex align-items-center gap-6">
+                                        <div class="stars" aria-label="5 star">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                        </div>
+                                        (65)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card border-0">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                <img src="./images/breed-dry-dog-food.png" class="img-fluid" alt="breed dry dog food">
+
+                                <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
+                                <div class="buttons d-flex flex-column gap-6 position-absolute ">
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
+                                </div>
+                                <a href="#" class="btn btn-sm d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                    Cart</a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h6">Breed Dry Dog Food</h3>
+                                <div class="d-flex gap-6 align-items-center">
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$100</span></div>
+                                    <div class="rating d-flex align-items-center gap-6">
+                                        <div class="stars" aria-label="5 star">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                        </div>
+                                        (65)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card border-0">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                <img src="./images/canon-eos-dslr-camera.png" class="img-fluid"
+                                    alt="CANON EOS DSLR Camera">
+
+                                <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
+                                <div class="buttons d-flex flex-column gap-6 position-absolute ">
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
+                                </div>
+                                <a href="#" class="btn btn-sm d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                    Cart</a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h6">CANON EOS DSLR Camera</h3>
+                                <div class="d-flex gap-6 align-items-center">
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$100</span></div>
+                                    <div class="rating d-flex align-items-center gap-6">
+                                        <div class="stars" aria-label="5 star">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                        </div>
+                                        (65)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card border-0">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                <img src="./images/breed-dry-dog-food.png" class="img-fluid" alt="breed dry dog food">
+
+                                <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
+                                <div class="buttons d-flex flex-column gap-6 position-absolute ">
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
+                                </div>
+                                <a href="#" class="btn btn-sm d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                    Cart</a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h6">Breed Dry Dog Food</h3>
+                                <div class="d-flex gap-6 align-items-center">
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$100</span></div>
+                                    <div class="rating d-flex align-items-center gap-6">
+                                        <div class="stars" aria-label="5 star">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                        </div>
+                                        (65)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card border-0">
+                            <div
+                                class="image-wrapper overflow-hidden rounded-2 bg-light d-flex justify-content-center align-items-center position-relative">
+                                <img src="./images/canon-eos-dslr-camera.png" class="img-fluid"
+                                    alt="CANON EOS DSLR Camera">
+
+                                <!-- <span class="badge bg-secondary position-absolute">-40%</span> -->
+                                <div class="buttons d-flex flex-column gap-6 position-absolute ">
+                                    <button class="btn btn-circle btn-circle-sm" title="Add to wishlist" aria-label="Add to wishlist"><img
+                                            src="./images/wishlist-icon.svg" alt=""></button>
+                                    <button class="btn btn-circle btn-circle-sm" title="Quick View" aria-label="Quick View"><img
+                                            src="./images/quick-view-icon.svg" alt=""></button>
+                                </div>
+                                <a href="#" class="btn btn-sm d-grid w-100 btn-dark position-absolute bottom-0">Add to
+                                    Cart</a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h6">CANON EOS DSLR Camera</h3>
+                                <div class="d-flex gap-6 align-items-center">
+                                    <div class="price d-flex gap-16"><span class="text-secondary">$100</span></div>
+                                    <div class="rating d-flex align-items-center gap-6">
+                                        <div class="stars" aria-label="5 star">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                            <img src="./images/star-icon.svg" alt="">
+                                        </div>
+                                        (65)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-40 mt-xl-60">
+                    <a href="#" class="btn btn-secondary">View All Products</a>
+                </div>
+            </div>
+        </section>
+        <section class="py-40 py-lg-70 new-arrival">
+            <div class="container">
+                <div
+                    class="section-heading mb-24 gap-16 mb-xl-40 d-flex flex-column flex-md-row align-items-md-end justify-content-md-between">
+                    <div class="d-flex flex-column flex-sm-row align-items-sm-end flex-wrap">
+                        <div
+                            class="heading-top mb-16 d-flex gap-16 align-items-center text-secondary fw-semibold w-100">
+                            <span class="heading-top-line"></span>Featured</div>
+                        <h2 class="me-lg-20">New Arrival</h2>
+                    </div>
+                </div>
+                <div class="row gy-24 gy-lg-0">
+                    <div class="col-lg-6">
+                        <div class="featured-product text-bg-dark h-100 position-relative">
+                            <img src="./images/play-station-5.jpg" class="w-100 h-100 object-fit-cover"
+                                alt="play station 5">
+
+                            <div class="position-absolute bottom-0 start-0 p-24 p-xl-30 pe-xxl-40 w-75">
+                                <h3 class="h4 mb-16 fw-semibold">PlayStation 5</h3>
+                                <p class="mb-16">Black and White version of the PS5 coming out on sale.</p>
+                                <a href=""
+                                    class="btn btn-link text-white p-0 text-decoration-underline link-offset-3">Shop
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-grid gap-24 gap-lg-30">
+                            <div class="featured-product text-bg-dark position-relative">
+                                <img src="./images/womens-collections.jpg" class="w-100 h-100 object-fit-cover"
+                                    alt="womens collections">
+
+                                <div class="position-absolute bottom-0 start-0 p-16 p-md-24">
+                                    <h3 class="h4 mb-16 fw-semibold">Womens Collections</h3>
+                                    <p class="mb-16">Featured woman collections that give you another vibe.</p>
+                                    <a href=""
+                                        class="btn btn-link text-white p-0 text-decoration-underline link-offset-3">Shop
+                                        Now</a>
+                                </div>
+                            </div>
+                            <div class="featured-product text-bg-dark position-relative">
+                                <img src="./images/speakers.png" class="w-100 h-100 object-fit-cover" alt="Speakers">
+
+                                <div class="position-absolute bottom-0 start-0 p-16 p-md-24">
+                                    <h3 class="h4 mb-16 fw-semibold">Speakers</h3>
+                                    <p class="mb-16">Amazon wireless speakers</p>
+                                    <a href=""
+                                        class="btn btn-link text-white p-0 text-decoration-underline link-offset-3">Shop
+                                        Now</a>
+                                </div>
+                            </div>
+                            <div class="featured-product text-bg-dark position-relative">
+                                <img src="./images/perfumes.jpg" class="w-100 h-100 object-fit-cover" alt="Perfumes">
+
+                                <div class="position-absolute bottom-0 start-0 p-16 p-md-24">
+                                    <h3 class="h4 mb-16 fw-semibold">Perfumes</h3>
+                                    <p class="mb-16">GUCCI INTENSE OUD EDP</p>
+                                    <a href=""
+                                        class="btn btn-link text-white p-0 text-decoration-underline link-offset-3">Shop
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-40 py-lg-70 usps">
+            <div class="container pb-20 pb-lg-70">
+                <div class="row">
+                    <div class="col-lg-11 mx-auto">
+                        <div class="row row-cols-1 row-cols-md-3 gx-xl-40 justify-content-between">
+                            <div class="col text-center">
+                                <div class="icon mb-24">
+                                    <div class="btn-circle bg-dark btn-circle-lg mx-auto">
+                                        <img src="./images/icon-delivery.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3 class="h5">FREE AND FAST DELIVERY</h3>
+                                    <p class="small mb-0">Free delivery for all orders over $140</p>
+                                </div>
+                            </div>
+                            <div class="col text-center">
+                                <div class="icon mb-24">
+                                    <div class="btn-circle bg-dark btn-circle-lg mx-auto">
+                                        <img src="./images/icon-customer-service.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3 class="h5">24/7 CUSTOMER SERVICE</h3>
+                                    <p class="small mb-0">Friendly 24/7 customer support</p>
+                                </div>
+                            </div>
+                            <div class="col text-center">
+                                <div class="icon mb-24">
+                                    <div class="btn-circle bg-dark btn-circle-lg mx-auto">
+                                        <img src="./images/icon-secure.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3 class="h5">MONEY BACK GUARANTEE</h3>
+                                    <p class="small mb-0">We reurn money within 30 days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="pt-40 pt-lg-70 pb-24 text-bg-dark">
+        <div class="container pt-16">
+            <div class="row gap-30 justify-content-between">
+                <div class="col-lg-3 ">
+                    <h2 class="h4 mb-16 mb-lg-24"><a href="index.html" class="link-light">Exclusive</a></h2>
+                    <h3 class="h5 mb-16 mb-lg-24">Subscribe</h3>
+                    <p>Get 10% off your first order</p>
+                    <form action="#">
+                        <div class="input-group border border-light rounded-2 pe-6" >
+                            <input type="email" class="form-control bg-transparent form-control-sm text-light border-0" placeholder="Enter your email">
+                            <button class="btn p-0" aria-label="Subscribe our Newsletter"><img src="./images/icon-send.svg" class="img-fluid" alt=""></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3">                    
+                    <h3 class="h5 mb-16 mb-lg-24">Support</h3>
+                    <p>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
+                    <p><a class="link-light" href="mailto: exclusive@gmail.com">exclusive@gmail.com</a></p>
+                    <p><a class="link-light" href="tel: 8801588889999">+88015-88888-9999</a></p>
+                </div>
+                <div class="col-lg-1 flex-grow-1">                    
+                    <h3 class="h5 mb-16 mb-lg-24">Account</h3>
+                    <nav class="d-flex flex-column gap-6 gap-lg-16">
+                        <a href="#" class="link-light">My Account</a>
+                        <a href="#" class="link-light">Login / Register</a>
+                        <a href="#" class="link-light">Cart</a>
+                        <a href="#" class="link-light">Wishlist</a>
+                        <a href="#" class="link-light">Shop</a>
+                    </nav>
+                </div>
+                <div class="col-lg-1 flex-grow-1">                    
+                    <h3 class="h5 mb-16 mb-lg-24">Quick Link</h3>
+                    <nav class="d-flex flex-column gap-6 gap-lg-16">
+                        <a href="#" class="link-light">Privacy Policy</a>
+                        <a href="#" class="link-light">Terms Of Use</a>
+                        <a href="#" class="link-light">FAQ</a>
+                        <a href="#" class="link-light">Contact</a>
+                    </nav>
+                </div>
+                <div class="col-lg-2 flex-grow-1">                    
+                    <h3 class="h5 mb-16 mb-lg-24">Download App</h3>
+                    <small class="mb-6 d-block">Save $3 with App New User Only</small>
+                    <img src="./images/app-qr.svg" class="img-fluid" alt="QR code to download mobile app">
+                    <div class="d-flex mt-24 gap-16 gap-lg-24">
+                        <a target="_blank" href="#" class="link-light" aria-label="click here to visit our facebook page">
+                            <img src="./images/icon-facebook.svg" alt="facebook logo">
+                        </a>
+                        <a target="_blank" href="#" class="link-light" aria-label="click here to visit our twitter page">
+                            <img src="./images/icon-twitter.svg" alt="twitter logo">
+                        </a>
+                        <a target="_blank" href="#" class="link-light" aria-label="click here to visit our instagram page">
+                            <img src="./images/icon-instagram.svg" alt="instagram logo">
+                        </a>
+                        <a target="_blank" href="#" class="link-light" aria-label="click here to visit our linkedin page">
+                            <img src="./images/icon-linkedin.svg" alt="linkedin logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
-      var DealsSwiper = new Swiper(".flashDealsSwiper", {
-      slidesPerView: 1.1,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".flashDealsNext",
-        prevEl: ".flashDealsPrev",
-      },
-      loop: true,
-      breakpoints: {
-        640: {
-          slidesPerView: 1.5,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2.5,
-          spaceBetween: 20,
-        },
-        992: {
-          slidesPerView: 3.3,
-          spaceBetween: 30,
-        },
-        1200: {
-          slidesPerView: 4.4,
-          spaceBetween: 30,
-        },
-      },
-    });
-    var CategorySwiper = new Swiper("#categorySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".categoriesNext",
-        prevEl: ".categoriesPrev",
-      },
-      loop: true,
-      breakpoints: {
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-        992: {
-          slidesPerView: 5,
-          spaceBetween: 30,
-        },
-        1200: {
-          slidesPerView: 6,
-          spaceBetween: 30,
-        },
-      },
-    });
+        var DealsSwiper = new Swiper(".flashDealsSwiper", {
+            slidesPerView: 1.1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".flashDealsNext",
+                prevEl: ".flashDealsPrev",
+            },
+            loop: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3.3,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 4.4,
+                    spaceBetween: 30,
+                },
+            },
+        });
+        var CategorySwiper = new Swiper("#categorySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".categoriesNext",
+                prevEl: ".categoriesPrev",
+            },
+            loop: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 6,
+                    spaceBetween: 30,
+                },
+            },
+        });
     </script>
 </body>
 
