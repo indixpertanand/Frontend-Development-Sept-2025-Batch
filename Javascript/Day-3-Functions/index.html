@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types & Operators</title>
+</head>
+<body>
+    <header><h1>Data Types & Operators</h1></header>
+
+    <script>
+        let name = "Anand";
+
+        // Function Declaration
+        function greet(x){
+            console.log( "Hello " + x);
+
+        }
+
+       let greeting =  greet(name);
+       console.log(greeting)
+
+    //    Function Expression
+        const add = function (a, b){
+            return +a + +b
+        }
+        console.log(add('5', '6'));
+
+
+        let newgreet = (name)=>{
+            console.log(this)
+            return "Hello " + name;
+        }
+        // let newgreet = name => "Hello " + name;
+       let obj = {
+        name: "Anand",
+        greet: function(){
+            console.log(this)
+            console.log("hello "+this.name)
+        }
+       }
+
+       obj.greet()
+
+        console.log(newgreet("Himanshu"))
+    </script>
+</body>
+</html>

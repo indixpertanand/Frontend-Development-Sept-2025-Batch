@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript String</h1>
+    </header>
+    <script>
+        let firstName = "Anand";
+        let lastName = 'Singh';
+        let fullName = `${firstName} ${lastName} ${5 + 7}`;
+        console.log(firstName.concat(" ", lastName))
+        console.log(fullName, fullName.length)
+        console.log(fullName.toUpperCase())
+        console.log(fullName.toLowerCase())
+
+
+
+        // Char At 
+        console.log(fullName.charAt(4))
+
+        //Includes
+        console.log(fullName.includes("12 "))
+
+
+        // Slice
+        let subStr = fullName.slice(0, 4);
+        console.log(subStr, fullName)
+
+        // Replace
+        let newFullName  = fullName.replace(" 12", ", Gurugram")
+        console.log(newFullName)
+
+        let namearr = newFullName.split(" ")
+        console.log(namearr)
+    </script>
+</body>
+</html>
